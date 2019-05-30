@@ -33,14 +33,6 @@
         "drupal/drupal-library-installer-plugin": "^0.3",
         "drupal/console": "^1.0.2",
         "drush/drush": "^9.0.0",
-        "vlucas/phpdotenv": "^3.3",
-        "webflo/drupal-finder": "^1.0.0",
-        "webmozart/path-util": "^2.3",
-        "zaporylie/composer-drupal-optimizations": "^1.1",
-        "t324inc/d324": "8.7.x-dev",
-        "t324inc/d324-updater": "8.7.x-dev"
-    },
-    "conflict": {
         "drupal/drupal": "*"
     },
     "minimum-stability": "dev",
