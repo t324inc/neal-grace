@@ -1,0 +1,11 @@
+uuid: 5fc92484-3b30-48a1-94c0-7b2aaa6ca91e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.testimonial
+id: node_type_testimonial
+action: access_denied
+allow_override: 1
+redirect: ''
+redirect_code: 301

@@ -1,0 +1,29 @@
+uuid: 52fbf9bc-0ffd-415b-bdaf-3212fe2f66b6
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: wWpbRoUcvv4FFFv2mXvXZU5X_7RBPZx02aHga3SR7e0
+id: paragraph.bp_card_style
+field_name: bp_card_style
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: card--large-top
+      label: 'Card with Large Top Image'
+    -
+      value: card--small-left
+      label: 'Card with Small Left Image'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

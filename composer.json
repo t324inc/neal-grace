@@ -1,0 +1,121 @@
+{
+    "name": "t324inc/d324-project",
+    "description": "D324 Project Template - An Optimal Drupal 8 Project by T324",
+    "type": "project",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "T324",
+            "homepage": "https://www.t324.com",
+            "role": "Maintainer"
+        }
+    ],
+    "repositories": {
+        "t324": {
+            "type": "composer",
+            "url": "https://t324inc.github.io/satis/"
+        },
+        "drupal": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        "assets": {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    },
+    "require": {
+        "php": ">=7.2",
+        "composer/installers": "^1.2",
+        "oomphinc/composer-installers-extender": "^1.1.2",
+        "cweagans/composer-patches": "^1.6.5",
+        "drupal-composer/drupal-scaffold": "^2.5",
+        "drupal/drupal-library-installer-plugin": "^0.3",
+        "drupal/console": "^1.0.2",
+        "drush/drush": "^9.0.0",
+        "vlucas/phpdotenv": "^3.3",
+        "webflo/drupal-finder": "^1.0.0",
+        "webmozart/path-util": "^2.3",
+        "zaporylie/composer-drupal-optimizations": "^1.1",
+        "t324inc/d324": "8.7.x-dev",
+        "t324inc/d324-updater": "8.7.x-dev"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "bin-dir": "bin/",
+        "secure-http": false,
+        "optimize-autoloader": true,
+        "preferred-install": {
+            "drupal/core": "dist"
+        }
+    },
+    "autoload": {
+        "files": [
+            "load.environment.php"
+        ]
+    },
+    "scripts": {
+        "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
+        "post-install-cmd": [
+            "D324\\composer\\ScriptHandler::createRequiredFiles",
+            "D324\\composer\\ScriptHandler::removeGitDirectories",
+            "@composer drupal-scaffold"
+        ],
+        "post-update-cmd": [
+            "D324\\composer\\ScriptHandler::createRequiredFiles",
+            "D324\\composer\\ScriptHandler::removeGitDirectories"
+        ],
+        "post-drupal-scaffold-cmd": ["D324\\composer\\ScriptHandler::postDrupalScaffoldProcedure"]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-8.x": "8.x-dev"
+        },
+        "installer-types": [
+            "npm-asset",
+            "bower-asset"
+        ],
+        "installer-paths": {
+            "web/core": ["type:drupal-core"],
+            "web/profiles/{$name}": ["type:drupal-profile"],
+            "web/themes/d324/{$name}": ["t324inc/d324theme", "t324inc/d324theme_admin"],
+            "web/modules/d324/{$name}": ["vendor:t324inc"],
+            "web/modules/contrib/{$name}": ["type:drupal-module"],
+            "web/modules/custom/{$name}": ["type:custom-drupal-module"],
+            "web/themes/contrib/{$name}": ["type:drupal-theme"],
+            "web/themes/custom/{$name}": ["type:custom-drupal-theme"],
+            "web/libraries/slick": ["npm-asset/slick-carousel"],
+            "web/libraries/{$name}": [
+                "type:drupal-library",
+                "type:npm-asset",
+                "type:bower-asset"
+            ],
+            "drush/Commands/{$name}": ["type:drupal-drush"]
+        },
+        "drupal-libraries": {
+            "library-directory": "web/libraries",
+            "libraries": [
+                {"name": "dropzone","package": "npm-asset/dropzone"},
+                {"name": "blazy", "package": "npm-asset/blazy"},
+                {"name": "slick", "package": "npm-asset/slick-carousel"}
+            ]
+        },
+        "drupal-scaffold": {
+            "initial": {
+                ".editorconfig": "../.editorconfig",
+                ".gitattributes": "../.gitattributes"
+            }
+        },
+        "enable-patching": true,
+        "composer-exit-on-patch-failure": true,
+        "patchLevel": {
+            "drupal/core": "-p2"
+        },
+        "patches": {
+        }
+    }
+}

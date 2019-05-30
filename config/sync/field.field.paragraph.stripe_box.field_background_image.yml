@@ -1,0 +1,28 @@
+uuid: e03c39af-4b9d-4fd8-8679-4de442267f94
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_background_image
+    - media.type.image
+    - paragraphs.paragraphs_type.stripe_box
+id: paragraph.stripe_box.field_background_image
+field_name: field_background_image
+entity_type: paragraph
+bundle: stripe_box
+label: 'Background Image'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

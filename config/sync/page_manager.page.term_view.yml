@@ -1,0 +1,18 @@
+uuid: 06840f52-fc58-42f6-9a07-b1bf88384cf4
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: RCVWP-yHwxSNiQORMIabDgHMEVqOMW58w80BQgRFJ4k
+id: term_view
+label: 'Term View'
+description: 'When enabled, this overrides the default Drupal behavior for displaying nodes at <em>/node/{node}</em>. If you add variants, you may use selection criteria such as node type or language or user access to provide different views of nodes. If no variant is selected, the default Drupal node view will be used. This page only affects nodes viewed as pages, it will not affect nodes viewed in lists or at other locations.'
+use_admin_theme: false
+path: '/taxonomy/term/{term}'
+access_logic: and
+access_conditions: {  }
+parameters:
+  term:
+    machine_name: term
+    type: 'entity:taxonomy_term'
+    label: Term

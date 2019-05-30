@@ -1,0 +1,20 @@
+uuid: 8d751258-7f81-488c-9066-32bd0183ef22
+langcode: en
+status: true
+dependencies:
+  theme:
+    - d324theme_admin
+_core:
+  default_config_hash: HwgNO5SbqL2HRyNScGXJUU1_OiUHxDagZv39xB8wvmQ
+id: d324theme_admin_page_title
+theme: d324theme_admin
+region: header
+weight: -30
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,24 @@
+uuid: e104c390-525b-4a92-a255-751769228970
+langcode: en
+status: true
+dependencies:
+  module:
+    - d324_copyright_block
+  theme:
+    - d324theme
+_core:
+  default_config_hash: uX1OknClvyIAsfWnjMvEpnKVLltSskld35w_cd4L_1o
+id: d324theme_developer_copyright_block
+theme: d324theme
+region: footer
+weight: 0
+provider: null
+plugin: d324_developer_copyright_block
+settings:
+  id: d324theme_developer_copyright_block
+  label: 'D324 Developer Copyright block'
+  provider: d324_copyright_block
+  label_display: ''
+  d324_copyright_block_developer_name: T324
+  d324_copyright_block_developer_url: 'https://www.t324.com'
+visibility: {  }

@@ -1,0 +1,9 @@
+uuid: 4ad992c3-8332-4c48-8efc-b5a464f474e4
+langcode: en
+status: true
+dependencies: {  }
+id: jumbotron
+label: Jumbotron
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

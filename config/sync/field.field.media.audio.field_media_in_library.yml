@@ -1,0 +1,25 @@
+uuid: 5409f6b1-ecd8-45d5-b759-8ea030f6cbfb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_in_library
+    - media.type.audio
+_core:
+  default_config_hash: y-12eGt1od1yn4CgxRbqm3S3VwQsd88CUzrV5izkZZg
+id: media.audio.field_media_in_library
+field_name: field_media_in_library
+entity_type: media
+bundle: audio
+label: 'Save to Library'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,20 @@
+uuid: 90244515-63c1-4c47-9423-070a11a2be6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.tweet
+_core:
+  default_config_hash: 1_NuC2akMDqTiQwJ7lebzqXCpqEnit5di9yCLwpraTs
+id: media.tweet.changed
+field_name: changed
+entity_type: media
+bundle: tweet
+label: Changed
+description: 'The time the media item was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

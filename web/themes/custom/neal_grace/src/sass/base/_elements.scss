@@ -1,0 +1,131 @@
+// -----------------------------------------------------------------------------
+// HEADINGS
+// -----------------------------------------------------------------------------
+
+h1 { line-height: $h1-line-height; }
+h2 { line-height: $h2-line-height; }
+h3 { line-height: $h3-line-height; }
+h4 { line-height: $h4-line-height; }
+h5 { line-height: $h5-line-height; }
+h6 {
+  line-height: $h6-line-height;
+  small {
+    color: $secondary;
+    font-family: $font-family-sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    a {
+      color: $secondary;
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// TEXT
+// -----------------------------------------------------------------------------
+
+p {
+
+}
+
+// -----------------------------------------------------------------------------
+// LINKS
+// -----------------------------------------------------------------------------
+
+a {
+
+  @include hover {
+
+  }
+}
+
+// -----------------------------------------------------------------------------
+// BUTTONS
+// -----------------------------------------------------------------------------
+
+.btn-primary {
+  @include button-variant($secondary, darken($secondary, 7.5%), darken($secondary, 10%), lighten($secondary,5%), lighten($secondary, 10%), darken($secondary,30%));
+}
+
+.btn-outline-primary {
+  @include button-outline-variant($secondary, #222222, lighten($secondary,5%), $secondary);
+}
+
+.more-link {
+  text-align: left;
+}
+
+.btn, .more-link a {
+  @extend .shadow;
+  @include button-variant($secondary, darken($secondary, 7.5%), darken($secondary, 10%), lighten($secondary,5%), lighten($secondary, 10%), darken($secondary,30%));
+  font-weight: bold;
+  color: $white;
+  padding: 1rem 2rem;
+  border-width: 0px !important;
+  border-radius: .375rem;
+  line-height: 1;
+  font-size: 1rem;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.calls-to-action a {
+  margin: 2rem .75rem;
+}
+
+// -----------------------------------------------------------------------------
+// Forms
+// -----------------------------------------------------------------------------
+
+a {
+  @include hover {
+
+  }
+}
+
+// -----------------------------------------------------------------------------
+// LISTS
+// -----------------------------------------------------------------------------
+
+ol,
+ul,
+dl {
+
+}
+
+// -----------------------------------------------------------------------------
+// IMAGE
+// -----------------------------------------------------------------------------
+
+img {
+  &.img-thumbnail {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+  }
+}
+
+figure {
+
+}
+
+figcaption {
+
+}
+
+// -----------------------------------------------------------------------------
+// OTHER
+// -----------------------------------------------------------------------------
+
+blockquote {
+
+}
+
+strong {
+
+}
+
+small {
+
+}

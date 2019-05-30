@@ -1,0 +1,39 @@
+name: Neal Grace D324
+description: A D324Theme subtheme by T324
+core: 8.x
+version: 8.x-7.x
+engine: twig
+type: theme
+package: D324
+base theme: d324theme
+logo: logo.svg
+screenshot: screenshot.png
+
+regions:
+  above_navbar: Above Navbar
+  navbar_branding: Navbar branding
+  navbar_left:  Navbar left
+  navbar_right: Navbar right
+  header: Header
+  titlearea: Title Area
+  content: Content
+  sidebar_left: Sidebar Left
+  sidebar_right: Sidebar Right
+  page_top: Page top
+  page_bottom: Page bottom
+  above_footer: Above Footer
+  footer: Footer
+
+libraries:
+  - neal_grace/style
+
+libraries-override:
+  d324theme/bootstrap: false
+
+ckeditor_stylesheets:
+  - assets/css/neal_grace.style.css
+
+component-libraries:
+  neal_grace:
+    paths:
+      - ./src/components

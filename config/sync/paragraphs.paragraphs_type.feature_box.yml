@@ -1,0 +1,9 @@
+uuid: 842936c0-ff15-407f-9f93-d86192655e05
+langcode: en
+status: true
+dependencies: {  }
+id: feature_box
+label: 'Feature Box'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

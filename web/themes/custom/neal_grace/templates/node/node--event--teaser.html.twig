@@ -1,0 +1,28 @@
+{#
+/**
+ * @file
+ * Template for a Node.
+ */
+#}
+{%
+  set classes = [
+  'node',
+  node.isPromoted() ? 'node--promoted',
+  node.isSticky() ? 'node--sticky',
+  not node.isPublished() ? 'node--unpublished',
+  node.bundle|clean_class,
+  node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
+  'shadow bg-white p-3 mb-6 d-flex'
+]
+%}
+<article{{ attributes.addClass(classes) }}>
+  {% block content %}
+    {% include '@d324theme/date_box/date_box.twig' with {
+      date_month: date_month,
+      date_day: date_day
+    } %}
+    <div class="date-content p-4 d-flex align-items-center">
+      <h4 class="m-0"><a href="/node/40#{{node.id}}">{{ node.title.value }}</a></h4>
+    </div>
+  {% endblock %}
+</article>

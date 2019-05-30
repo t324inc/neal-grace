@@ -1,0 +1,22 @@
+uuid: 4e83007c-684f-411a-9a0f-60982e9021d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.instagram
+  module:
+    - path
+_core:
+  default_config_hash: 8Y-OWDVphCRrauBFDxtH-RhcRueCetdJoX5k5KpjZYw
+id: media.instagram.path
+field_name: path
+entity_type: media
+bundle: instagram
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,29 @@
+uuid: 8ac0b3f9-20dd-4228-b5bb-815952700576
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - menu_block
+  theme:
+    - d324theme
+_core:
+  default_config_hash: YOtZjYj7aHafF40dNRym63QCu6jRyI77rWmhpTc22Sw
+id: mainnavigation
+theme: d324theme
+region: navbar_right
+weight: 0
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: 'Main navigation'
+  provider: menu_block
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand: 0
+  parent: 'main:'
+  suggestion: main
+visibility: {  }

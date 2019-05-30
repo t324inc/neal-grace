@@ -1,0 +1,29 @@
+uuid: 06babc01-8bfa-41da-b1af-bb9006a594b1
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:02d3b952-68c0-43af-a32a-436f4c322d19'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - neal_grace
+third_party_settings:
+  block_class:
+    classes: 'align-center justify-content-center breakout'
+id: newslettersignupblock
+theme: neal_grace
+region: above_footer
+weight: 0
+provider: null
+plugin: 'block_content:02d3b952-68c0-43af-a32a-436f4c322d19'
+settings:
+  id: 'block_content:02d3b952-68c0-43af-a32a-436f4c322d19'
+  label: 'Newsletter Signup Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

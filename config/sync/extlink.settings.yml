@@ -1,0 +1,14 @@
+extlink_include: ''
+extlink_exclude: ''
+extlink_alert_text: ''
+extlink_alert: false
+extlink_target: true
+extlink_subdomains: true
+extlink_mailto_class: '0'
+extlink_img_class: false
+extlink_class: ext
+extlink_css_exclude: '.no-ext, .a2a_kit, .a2a_kit a'
+extlink_css_explicit: ''
+extlink_target_no_override: false
+extlink_nofollow: false
+extlink_follow_no_override: false

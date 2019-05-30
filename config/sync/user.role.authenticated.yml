@@ -1,0 +1,22 @@
+uuid: 3832cbae-3077-4174-9ff5-90972051ed83
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: AOmcnwDOD9S1XP1X3xNIZtncKmf3L-960NT_DZaVteE
+id: authenticated
+label: 'Authenticated user'
+weight: -9
+is_admin: false
+permissions:
+  - 'access content'
+  - 'access shortcuts'
+  - 'access sitemap'
+  - 'access tour'
+  - 'access user profiles'
+  - 'bypass honeypot protection'
+  - 'search content'
+  - 'use text format basic_html'
+  - 'use text format ckeditor_limited'
+  - 'view media'
+  - 'view terms in tags'

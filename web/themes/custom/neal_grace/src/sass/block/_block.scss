@@ -1,0 +1,9 @@
+// Styles for blocks provided by core and contrib modules
+
+// D324 copyright block
+.d324-copyright-block__developer-link {
+  color: $light;
+  &:hover {
+    color: $accent;
+  }
+}

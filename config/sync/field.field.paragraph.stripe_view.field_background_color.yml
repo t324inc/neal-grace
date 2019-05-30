@@ -1,0 +1,22 @@
+uuid: 8ca1dfde-0958-4896-9351-7543a16c3471
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_background_color
+    - paragraphs.paragraphs_type.stripe_view
+  module:
+    - color_field
+id: paragraph.stripe_view.field_background_color
+field_name: field_background_color
+entity_type: paragraph
+bundle: stripe_view
+label: 'Background Color'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 1
+field_type: color_field_type

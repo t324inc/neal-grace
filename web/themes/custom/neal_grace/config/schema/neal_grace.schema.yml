@@ -1,0 +1,5 @@
+# Schema for the configuration files of the neal_grace theme.
+
+neal_grace.settings:
+  type: theme_settings
+  label: 'neal_grace settings'

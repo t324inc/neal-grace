@@ -1,0 +1,25 @@
+uuid: 080c1651-7aff-4453-be52-0c7dc3c89379
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_quick_link
+    - paragraphs.paragraphs_type.bp_quicklinks
+  module:
+    - link
+_core:
+  default_config_hash: ZafDb1MZeXQB1446ZNuIsNk8oltlm-pasRs-V2qD-JI
+id: paragraph.bp_quicklinks.bp_quick_link
+field_name: bp_quick_link
+entity_type: paragraph
+bundle: bp_quicklinks
+label: 'Quick link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

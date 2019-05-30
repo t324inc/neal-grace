@@ -1,0 +1,80 @@
+uuid: 3cc474ee-6a37-4ab8-b668-6968ab9e6e4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_landing_page_sections
+    - node.type.landing_page
+    - paragraphs.paragraphs_type.bp_blank
+    - paragraphs.paragraphs_type.bp_modal
+    - paragraphs.paragraphs_type.bp_tab_section
+  module:
+    - entity_reference_revisions
+id: node.landing_page.field_landing_page_sections
+field_name: field_landing_page_sections
+entity_type: node
+bundle: landing_page
+label: 'Landing Page Sections'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 1
+    target_bundles:
+      bp_blank: bp_blank
+      bp_modal: bp_modal
+      bp_tab_section: bp_tab_section
+    target_bundles_drag_drop:
+      bp_accordion:
+        weight: 17
+        enabled: false
+      bp_accordion_section:
+        weight: 18
+        enabled: false
+      bp_blank:
+        enabled: true
+        weight: 19
+      bp_block:
+        weight: 20
+        enabled: false
+      bp_carousel:
+        weight: 21
+        enabled: false
+      bp_columns:
+        weight: 22
+        enabled: false
+      bp_columns_three_uneven:
+        weight: 23
+        enabled: false
+      bp_columns_two_uneven:
+        weight: 24
+        enabled: false
+      bp_column_wrapper:
+        weight: 25
+        enabled: false
+      bp_image:
+        weight: 26
+        enabled: false
+      bp_modal:
+        enabled: true
+        weight: 27
+      bp_simple:
+        weight: 28
+        enabled: false
+      bp_tabs:
+        weight: 29
+        enabled: false
+      bp_tab_section:
+        enabled: true
+        weight: 30
+      bp_view:
+        weight: 31
+        enabled: false
+      hero_slide:
+        enabled: true
+        weight: 32
+field_type: entity_reference_revisions

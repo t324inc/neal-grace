@@ -1,0 +1,15 @@
+uuid: 71e65d12-aa57-43f5-8a4b-0cd16890fb0b
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_embed
+    - node
+label: Node
+id: node
+type_id: entity
+type_settings:
+  entity_type: node
+  bundles: {  }
+  display_plugins: {  }
+icon_uuid: null

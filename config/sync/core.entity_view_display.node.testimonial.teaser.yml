@@ -1,0 +1,27 @@
+uuid: fa07d649-200b-4151-b522-07845293a13e
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.testimonial.field_attribution_name
+    - field.field.node.testimonial.field_attribution_title
+    - node.type.testimonial
+  module:
+    - user
+_core:
+  default_config_hash: QnSZ7NGH3l4Z7GvxEQnoy4eRRoJ6D7aLK00cVUDeKDE
+id: node.testimonial.teaser
+targetEntityType: node
+bundle: testimonial
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_attribution_name: true
+  field_attribution_title: true

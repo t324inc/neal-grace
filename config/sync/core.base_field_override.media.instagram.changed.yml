@@ -1,0 +1,20 @@
+uuid: c877153f-956c-4c55-8074-74e4adc79506
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.instagram
+_core:
+  default_config_hash: 9YLnCLVX65CqavWFmP6Z5AYZS8PqrBRxYBA0p28CY98
+id: media.instagram.changed
+field_name: changed
+entity_type: media
+bundle: instagram
+label: Changed
+description: 'The time the media item was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

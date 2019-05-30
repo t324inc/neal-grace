@@ -1,0 +1,14 @@
+uuid: a1a739b2-0fb7-4b51-8a64-f9838d7896b2
+name: 'Neal Grace'
+mail: noreply@t324.com
+slogan: 'Books to Dazzle Your Soul'
+page:
+  403: ''
+  404: ''
+  front: /node/35
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

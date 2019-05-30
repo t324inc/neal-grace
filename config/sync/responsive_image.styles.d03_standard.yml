@@ -1,0 +1,26 @@
+uuid: 0927a5ff-b9ce-4b78-8896-9fe8ef8908fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.d03_standard
+    - image.style.d08_standard
+  module:
+    - d324_media
+_core:
+  default_config_hash: M-bDBrd7H2C47vAEEZ3xn7XG2I3dP80Lrz7Xh3oREp4
+id: d03_standard
+label: 'Display 03 responsive standard 16:9'
+image_style_mappings:
+  -
+    breakpoint_id: d324_media.screen-sm-max
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: d08_standard
+  -
+    breakpoint_id: d324_media.screen-md-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: d03_standard
+breakpoint_group: d324_media
+fallback_image_style: d03_standard

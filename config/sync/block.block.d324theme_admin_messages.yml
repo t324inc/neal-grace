@@ -1,0 +1,22 @@
+uuid: 97efd66e-2ce9-4907-8dd4-a45d5cd5d35d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - d324theme_admin
+_core:
+  default_config_hash: 72mM2HuQJTwg4MZfaRtGSKSLagrpFs2KpLUTQCynTHc
+id: d324theme_admin_messages
+theme: d324theme_admin
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

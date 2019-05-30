@@ -1,0 +1,43 @@
+uuid: 7c35879b-669e-4ad7-804e-d73fe382a10d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.jumbotron.field_background_image
+    - field.field.paragraph.jumbotron.field_calls_to_actions
+    - field.field.paragraph.jumbotron.field_hero_text
+    - paragraphs.paragraphs_type.jumbotron
+  module:
+    - link
+    - media_library
+id: paragraph.jumbotron.default
+targetEntityType: paragraph
+bundle: jumbotron
+mode: default
+content:
+  field_background_image:
+    type: media_library_widget
+    weight: 2
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_calls_to_actions:
+    weight: 1
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_hero_text:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

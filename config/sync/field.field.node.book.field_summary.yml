@@ -1,0 +1,24 @@
+uuid: 1fcddba6-30b5-4366-b1f3-91b0bbcb7cc2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary
+    - node.type.book
+  module:
+    - text
+id: node.book.field_summary
+field_name: field_summary
+entity_type: node
+bundle: book
+label: Summary
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: "<p><strong>THE PURPOSE OF THIS SHORT BOOK</strong> is to offer important questions and answers relevant to almost all of us. The answers are my own, but I believe these answers embody a sense of wisdom and truth designed to encourage you to draw your own conclusions. We all need to get a clearer perspective of who we are. We need to assimilate new information that will broaden our understanding of ourselves and of our world. The answers in this book are intended to inspire you to step bravely forward by following the passionate dreams of your soul. You have a purpose between your birth and your death. The world needs your contribution no matter how small or how significant. We are all in this show together. The more conscious we are, the more successful we will be in transforming fear, doubt, anger and resignation into joy, fulfillment and triumph. This book is a must read for every human!</p>\r\n"
+    format: ckeditor_full
+default_value_callback: ''
+settings: {  }
+field_type: text_long

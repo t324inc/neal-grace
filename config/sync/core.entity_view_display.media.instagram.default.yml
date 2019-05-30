@@ -1,0 +1,32 @@
+uuid: 47e1b7a4-4794-47e1-9c7c-59f4f872f2de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.instagram.field_media_in_library
+    - field.field.media.instagram.field_media_instagram
+    - media.type.instagram
+  module:
+    - media_entity_instagram
+_core:
+  default_config_hash: JQsgk0e6L3dcqn0lMFXdJPQ7ZD6yUMoD36xYPSInOlc
+id: media.instagram.default
+targetEntityType: media
+bundle: instagram
+mode: default
+content:
+  field_media_instagram:
+    weight: 0
+    label: hidden
+    settings:
+      width: null
+      hidecaption: false
+    third_party_settings: {  }
+    type: instagram_embed
+    region: content
+hidden:
+  created: true
+  field_media_in_library: true
+  name: true
+  thumbnail: true
+  uid: true

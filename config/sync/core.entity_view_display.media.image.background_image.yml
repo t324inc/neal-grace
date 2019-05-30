@@ -1,0 +1,24 @@
+uuid: 19377374-cb98-42c6-a4f2-fa85119e1852
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.background_image
+    - field.field.media.image.field_media_image
+    - field.field.media.image.field_media_in_library
+    - media.type.image
+_core:
+  default_config_hash: 9NVYPtxhQbYNKvd8Fe5z8jan-7UtWq_4f_YVBcDXu_E
+id: media.image.background_image
+targetEntityType: media
+bundle: image
+mode: background_image
+content: {  }
+hidden:
+  addtoany: true
+  created: true
+  field_media_image: true
+  field_media_in_library: true
+  name: true
+  thumbnail: true
+  uid: true

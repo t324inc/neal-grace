@@ -1,0 +1,21 @@
+uuid: 23a92c6a-247d-4840-add9-d43e7a1fe806
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_twitter
+    - media.type.tweet
+_core:
+  default_config_hash: Z_nvO4yexbzyZQ9RlJ9NH8V4yYOVLBuR5Xv-laIgEfo
+id: media.tweet.field_media_twitter
+field_name: field_media_twitter
+entity_type: media
+bundle: tweet
+label: 'Tweet URL'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

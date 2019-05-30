@@ -1,0 +1,34 @@
+{#
+/**
+ * @file
+ * Template for a Node.
+ */
+#}
+{%
+  set classes = [
+  'node',
+  node.isPromoted() ? 'node--promoted',
+  node.isSticky() ? 'node--sticky',
+  not node.isPublished() ? 'node--unpublished',
+  node.bundle|clean_class,
+  node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
+  'p-0'
+]
+%}
+<article {{ attributes.addClass(classes) }}>
+  {% include '@d324theme/feature_box/feature_box.twig' with {
+    main_url: path('entity.node.canonical', {'node': node.id}),
+    feature_image: content.field_cover_art,
+    heading: node.title.value,
+    sub_heading: content.field_subtitle,
+    text: content.field_summary,
+    calls_to_action: node.field_button_links,
+    direction: 'left'
+  } %}
+  <div class="book__teaser-details px-3 mt-4 mb-9">
+    {{ content.field_publisher }}
+    {{ content.field_book_date }}
+    {{ content.field_length }}
+    {{ content.field_isbn }}
+  </div>
+</article>

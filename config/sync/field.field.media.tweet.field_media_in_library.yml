@@ -1,0 +1,25 @@
+uuid: dc4c3a53-3622-4619-8fc2-4ab726b6b023
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_in_library
+    - media.type.tweet
+_core:
+  default_config_hash: m8glh0_-AQLp4-mbCV-ZUZSVLUyQjp-4T8C4bkYqVrg
+id: media.tweet.field_media_in_library
+field_name: field_media_in_library
+entity_type: media
+bundle: tweet
+label: 'Save to Library'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

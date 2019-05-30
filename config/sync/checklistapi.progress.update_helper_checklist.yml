@@ -1,0 +1,32 @@
+progress:
+  '#changed': 1558363087
+  '#changed_by': '0'
+  '#items':
+    'd324_core:d324_core_update_8708':
+      '#completed': 1558363087
+      '#uid': '0'
+    'd324_core:d324_admin_update_8702':
+      '#completed': 1558363087
+      '#uid': '0'
+    'd324_core:d324_core_optional_update_8704':
+      '#completed': 1558363087
+      '#uid': '0'
+    'd324_core:d324_core_optional_update_8705':
+      '#completed': 1558363087
+      '#uid': '0'
+    'd324_core:d324_core_optional_update_8706':
+      '#completed': 1558363087
+      '#uid': '0'
+    'd324_core:d324_core_optional_update_8707':
+      '#completed': 1558363087
+      '#uid': '0'
+    'd324_core:d324_core_optional_update_8701':
+      '#completed': 1558363087
+      '#uid': '0'
+    'd324_core:d324_core_optional_update_8702':
+      '#completed': 1558363087
+      '#uid': '0'
+    'd324_core:d324_core_optional_update_8703':
+      '#completed': 1558363087
+      '#uid': '0'
+  '#completed_items': 9

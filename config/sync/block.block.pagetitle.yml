@@ -1,0 +1,23 @@
+uuid: 1cb803f0-bb02-43b7-9014-6eadb11dd818
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+  theme:
+    - d324theme
+third_party_settings:
+  block_class:
+    classes: page__title
+id: pagetitle
+theme: d324theme
+region: titlearea
+weight: -3
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

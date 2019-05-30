@@ -1,0 +1,8 @@
+uuid: 154b471f-d465-424e-8734-1c4674cba0e3
+langcode: en
+status: true
+dependencies: {  }
+id: hero_slider
+label: 'Hero Slider'
+revision: 1
+description: 'A configurable slideshow block to be placed in regions on D324 sites'

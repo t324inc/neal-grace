@@ -1,0 +1,23 @@
+uuid: b78e1344-7d58-44ca-83a9-0d7d3b69ed72
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_background
+    - paragraphs.paragraphs_type.bp_quicklinks
+  module:
+    - options
+_core:
+  default_config_hash: Ium9ENLboYM2a3pVxTNjCNgHfODPfpwcugbBbqDPr58
+id: paragraph.bp_quicklinks.bp_background
+field_name: bp_background
+entity_type: paragraph
+bundle: bp_quicklinks
+label: Background
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

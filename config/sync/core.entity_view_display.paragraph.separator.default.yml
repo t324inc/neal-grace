@@ -1,0 +1,16 @@
+uuid: 3216e485-4568-4ea4-a9c7-c2a21bd25b3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.separator.field_include_horizontal_divider
+    - field.field.paragraph.separator.field_spacing_size
+    - paragraphs.paragraphs_type.separator
+id: paragraph.separator.default
+targetEntityType: paragraph
+bundle: separator
+mode: default
+content: {  }
+hidden:
+  field_include_horizontal_divider: true
+  field_spacing_size: true

@@ -1,0 +1,20 @@
+uuid: e3ce811f-69a9-4b08-87fa-75a171dd1e98
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - neal_grace
+id: neal_grace_mainpagecontent_2
+theme: neal_grace
+region: content
+weight: -2
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: visible
+visibility: {  }

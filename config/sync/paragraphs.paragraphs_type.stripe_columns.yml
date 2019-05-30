@@ -1,0 +1,9 @@
+uuid: f03cf803-8f60-4ca3-8d1f-4efae0543ab9
+langcode: en
+status: true
+dependencies: {  }
+id: stripe_columns
+label: 'Stripe Columns'
+icon_uuid: null
+description: 'Equal width columns to be used in a landing page'
+behavior_plugins: {  }

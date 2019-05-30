@@ -1,0 +1,116 @@
+{#
+/**
+ * @file
+ * Template for the main page.
+ */
+#}
+<div class="page">
+
+  {% embed '@d324theme/navbar/navbar.twig' with {
+    placement: 'sticky-top',
+    container: 'fixed',
+    color: 'dark',
+    utility_classes: ['bg-primary', 'text-accent', 'align-center', 'justify-space-between', 'px-2', 'px-lg-4', 'px-xl-6', 'py-2'],
+  } %}
+
+    {% block above_navbar %}
+      {% if page.above_navbar %}
+        {{ page.above_navbar }}
+      {% endif %}
+    {% endblock %}
+
+    {% block branding %}
+      {% if page.navbar_branding %}
+        {{ page.navbar_branding }}
+      {% endif %}
+    {% endblock %}
+
+    {% block left %}
+      {% if page.navbar_left %}
+        <div class="mr-auto">
+          {{ page.navbar_left }}
+        </div>
+      {% endif %}
+    {% endblock %}
+
+    {% block right %}
+      {% if page.navbar_right %}
+        <div class="ml-auto">
+          {{ page.navbar_right }}
+        </div>
+      {% endif %}
+    {% endblock %}
+  {% endembed %}
+
+  {% if page.titlearea %}
+    <header class="page__title-area">
+      <div class="img-overlay dark text-white py-4 align-center">
+        <img src="/sites/default/files/2019-05/Rectangle%201.png" class="img-bg" alt="Neal Grace Author Website">
+        <div class="overlay page__titlearea-inner d-flex justify-content-md-between align-items-md-center">
+          <div class="container">
+            {% block titlearea %}
+              {{ page.titlearea }}
+            {% endblock %}
+          </div>
+        </div>
+      </div>
+    </header>
+  {% endif %}
+
+  <main class="pt-5 pb-5 container-fluid clearfix">
+    {% if page.header %}
+      <header class="page__header mb-3">
+        <div class="container">
+          {{ page.header }}
+        </div>
+      </header>
+    {% endif %}
+
+    {% if page.content %}
+      <div class="page__content">
+        <div class="container">
+          <div class="row">
+            {% if page.sidebar_left %}
+              <div class="col-sm-3 page__sidebar-left">
+                {{ page.sidebar_left }}
+              </div>
+            {% endif %}
+            <div class="col-sm">
+            {{ page.content }}
+            </div>
+            {% if page.sidebar_right %}
+              <div class="col-sm-3 page__sidebar-right">
+                {{ page.sidebar_right }}
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  </main>
+
+  {% if page.above_footer %}
+    <div class="page__above-footer">
+      <div class="img-overlay bg-primary text-white">
+        <img src="/sites/default/files/2019-05/Backing.jpg" class="img-bg" alt="Neal Grace Author Website">
+        <div class="overlay">
+          <div class="container">
+            <div class="d-flex justify-content-md-between align-items-md-center">
+              {{ page.above_footer }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+
+  {% if page.footer %}
+    <footer class="page__footer py-1 justify-space-between bg-dark container-fluid clearfix">
+      <div class="container">
+        <div class="d-flex justify-content-md-between align-items-md-center container">
+          {{ page.footer }}
+        </div>
+      </div>
+    </footer>
+  {% endif %}
+</div>

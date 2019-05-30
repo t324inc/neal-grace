@@ -1,0 +1,14 @@
+// Navigation: Main Menu
+// -----------------------------------------------------------------------------
+
+.navbar-dark .navbar-nav {
+  .nav-link {
+    color: $light;
+    transition: $transition-base;
+    &:hover, &.active, &.focus, &.is-active {
+      color: $accent;
+      font-weight: bold;
+    }
+  }
+}
+

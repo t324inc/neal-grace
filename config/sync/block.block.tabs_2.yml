@@ -1,0 +1,20 @@
+uuid: 29a58e26-0386-41a0-8c19-eb301e1461cc
+langcode: en
+status: true
+dependencies:
+  theme:
+    - neal_grace
+id: tabs_2
+theme: neal_grace
+region: content
+weight: -3
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

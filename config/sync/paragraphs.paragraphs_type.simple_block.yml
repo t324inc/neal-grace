@@ -1,0 +1,9 @@
+uuid: 4d7abd4e-a3ed-445b-b707-6a71758d2127
+langcode: en
+status: true
+dependencies: {  }
+id: simple_block
+label: 'Simple Block'
+icon_uuid: null
+description: 'A simple paragraph block consisting of a heading, sub-heading, text content, link and image'
+behavior_plugins: {  }

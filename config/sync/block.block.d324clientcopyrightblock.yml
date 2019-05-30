@@ -1,0 +1,21 @@
+uuid: d5191743-7251-4ebf-aac3-25a4c09f9fca
+langcode: en
+status: true
+dependencies:
+  module:
+    - d324_copyright_block
+  theme:
+    - neal_grace
+id: d324clientcopyrightblock
+theme: neal_grace
+region: footer
+weight: 0
+provider: null
+plugin: d324_client_copyright_block
+settings:
+  id: d324_client_copyright_block
+  label: 'D324 Client Copyright block'
+  provider: d324_copyright_block
+  label_display: '0'
+  d324_copyright_block_client_name: 'Neal Grace'
+visibility: {  }

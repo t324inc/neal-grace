@@ -1,0 +1,21 @@
+uuid: de38b68a-523d-42df-985e-48d1c4f9b03d
+langcode: en
+status: true
+dependencies:
+  module:
+    - crop
+    - media_entity_instagram
+third_party_settings:
+  crop:
+    image_field: null
+_core:
+  default_config_hash: kLfroPlcfmVxm4aKxyQAsy-pEpXBuUhHRJaRULChtMk
+id: instagram
+label: Instagram
+description: 'Instagram posts.'
+source: instagram
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_instagram
+field_map: {  }

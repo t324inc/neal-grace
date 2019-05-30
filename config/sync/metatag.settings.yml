@@ -1,0 +1,52 @@
+entity_type_groups:
+  file:
+    file:
+      basic: basic
+  media:
+    audio:
+      basic: basic
+    file:
+      basic: basic
+    image:
+      basic: basic
+      advanced: advanced
+      open_graph: open_graph
+      facebook: facebook
+    instagram:
+      basic: basic
+    tweet:
+      basic: basic
+      open_graph: open_graph
+    video:
+      basic: basic
+  node:
+    basic_page:
+      basic: basic
+      open_graph: open_graph
+    blog_post:
+      basic: basic
+      open_graph: open_graph
+    book:
+      basic: basic
+      advanced: advanced
+      open_graph: open_graph
+      facebook: facebook
+      twitter_cards: twitter_cards
+    event:
+      basic: basic
+      open_graph: open_graph
+      facebook: facebook
+      twitter_cards: twitter_cards
+    landing_page:
+      basic: basic
+    testimonial:
+      basic: basic
+      open_graph: open_graph
+  paragraph:
+    bp_accordion:
+      basic: basic
+    bp_blank:
+      basic: basic
+    bp_image:
+      basic: basic
+      open_graph: open_graph

@@ -1,0 +1,11 @@
+uuid: 94a872ea-e96c-4738-8b21-945d3a6b0a51
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: qRrLugnaHAf3gyPO5WuLJ4-_zb2QTKEEm6R-6501IGU
+id: bp_stat
+label: Stat
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

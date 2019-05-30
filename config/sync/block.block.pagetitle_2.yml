@@ -1,0 +1,30 @@
+uuid: 580c32b7-dfca-4cc9-931d-fa6770ffa9cb
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+  theme:
+    - neal_grace
+id: pagetitle_2
+theme: neal_grace
+region: titlearea
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      basic_page: basic_page
+      blog_post: blog_post
+      book: book
+      event: event
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

@@ -1,0 +1,36 @@
+uuid: 9ae64522-eb65-43a1-86d9-c8cd6d0f5cb3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_media
+    - media.type.image
+    - media.type.instagram
+    - media.type.remote_video
+    - media.type.tweet
+    - media.type.video
+    - paragraphs.paragraphs_type.stripe_box
+id: paragraph.stripe_box.field_media
+field_name: field_media
+entity_type: paragraph
+bundle: stripe_box
+label: Media
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+      instagram: instagram
+      remote_video: remote_video
+      tweet: tweet
+      video: video
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

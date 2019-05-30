@@ -1,0 +1,19 @@
+uuid: a2ac21b5-fee1-44c7-83a0-ec3825c42d32
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero_quote
+    - node.type.book
+id: node.book.field_hero_quote
+field_name: field_hero_quote
+entity_type: node
+bundle: book
+label: 'Hero Quote'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

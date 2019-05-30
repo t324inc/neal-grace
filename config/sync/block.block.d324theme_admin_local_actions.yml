@@ -1,0 +1,20 @@
+uuid: 59e92cf2-a561-4fd4-85e9-8922d84fae13
+langcode: en
+status: true
+dependencies:
+  theme:
+    - d324theme_admin
+_core:
+  default_config_hash: rGwYZilJvJHy-BRcyKUjeqDDCZKkKb96asqbGgwPYfQ
+id: d324theme_admin_local_actions
+theme: d324theme_admin
+region: content
+weight: -10
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

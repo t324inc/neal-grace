@@ -1,0 +1,22 @@
+uuid: 49d80a12-c0e6-48a2-a01d-a8d16fcd9ea5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_background_color_2
+    - paragraphs.paragraphs_type.stripe_view
+  module:
+    - color_field
+id: paragraph.stripe_view.field_background_color_2
+field_name: field_background_color_2
+entity_type: paragraph
+bundle: stripe_view
+label: 'Background Color 2'
+description: 'Add this to create a gradient'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 1
+field_type: color_field_type

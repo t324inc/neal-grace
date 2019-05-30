@@ -1,0 +1,25 @@
+uuid: 7f72f5ec-cf43-4da6-b186-58c1878f891d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_in_library
+    - media.type.instagram
+_core:
+  default_config_hash: enXuuPsMZqdQpou_IDKUtPMdoyI0P-hvLiTEQN229Ak
+id: media.instagram.field_media_in_library
+field_name: field_media_in_library
+entity_type: media
+bundle: instagram
+label: 'Save to Library'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

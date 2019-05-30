@@ -1,0 +1,21 @@
+uuid: 4e2392b0-e712-46d4-a5c9-6b61887be24a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_attribution_name
+field_name: field_attribution_name
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

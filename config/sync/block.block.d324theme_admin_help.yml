@@ -1,0 +1,22 @@
+uuid: 5e7b855f-0618-4dbe-86fc-ebaf580b4ab8
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - d324theme_admin
+_core:
+  default_config_hash: Uqg02qrAUFhTKcHH08NpBKMzzvcAv563oiwvGu6tQxo
+id: d324theme_admin_help
+theme: d324theme_admin
+region: help
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

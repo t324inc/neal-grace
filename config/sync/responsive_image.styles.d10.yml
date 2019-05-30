@@ -1,0 +1,31 @@
+uuid: c7e1c721-3189-4d55-bd15-b2752f698a27
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.d08
+    - image.style.d10
+  module:
+    - d324_media
+_core:
+  default_config_hash: u2nvHtLQ4SgHt5nxhZGdd3x3BiBFNfxjC8v_InKcQuA
+id: d10
+label: 'Display 10 responsive auto'
+image_style_mappings:
+  -
+    breakpoint_id: d324_media.screen-sm-max
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: d08
+  -
+    breakpoint_id: d324_media.screen-md-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: d10
+  -
+    breakpoint_id: d324_media.screen-lg-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: d10
+breakpoint_group: d324_media
+fallback_image_style: d08

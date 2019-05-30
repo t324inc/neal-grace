@@ -1,0 +1,22 @@
+uuid: e64ddef5-f5f4-451a-b0bf-5db287dc1ba1
+langcode: en
+status: true
+dependencies:
+  theme:
+    - d324theme_admin
+_core:
+  default_config_hash: rBfd6dg_MpiBjULY_4i4mNo366f7LUj0Cmr9yWO8Syc
+id: d324theme_admin_secondary_local_tasks
+theme: d324theme_admin
+region: pre_content
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  provider: core
+  label_display: '0'
+  primary: false
+  secondary: true
+visibility: {  }

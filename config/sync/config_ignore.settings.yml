@@ -1,0 +1,2 @@
+ignored_config_entities:
+  - 'd324_core.general_settings.*'

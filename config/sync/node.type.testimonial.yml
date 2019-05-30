@@ -1,0 +1,19 @@
+uuid: d562a089-416f-4d9b-a086-1cce150ac2bd
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: 6YMcjKIHmJ20DcTz1A9HHULNY7m0mgRTBnl7W016Y-c
+name: Testimonial
+type: testimonial
+description: 'A node type to hold kudos and accolades'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

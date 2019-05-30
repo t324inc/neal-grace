@@ -1,0 +1,29 @@
+uuid: 49722b3e-2c0f-428f-8bc5-a198e9bd97ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.separator.field_include_horizontal_divider
+    - field.field.paragraph.separator.field_spacing_size
+    - paragraphs.paragraphs_type.separator
+id: paragraph.separator.default
+targetEntityType: paragraph
+bundle: separator
+mode: default
+content:
+  field_include_horizontal_divider:
+    weight: 1
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_spacing_size:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true

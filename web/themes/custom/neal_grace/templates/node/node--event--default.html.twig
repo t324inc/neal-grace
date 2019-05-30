@@ -1,0 +1,40 @@
+{#
+/**
+ * @file
+ * Template for a Node.
+ */
+#}
+{%
+  set classes = [
+  'node',
+  node.isPromoted() ? 'node--promoted',
+  node.isSticky() ? 'node--sticky',
+  not node.isPublished() ? 'node--unpublished',
+  node.bundle|clean_class,
+  node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
+  'mb-6 column'
+]
+%}
+<article{{ attributes.addClass(classes) }} id="">
+  <div class="row">
+    {% block content %}
+      {% if content.field_media|render|striptags %}
+        <div class="col-sm-5">
+          {{ content.field_media }}
+        </div>
+      {% endif %}
+      <div class="col-sm">
+        <a name="events-{{ node.id }}"></a>
+        <div class="d-flex flex-column">
+          <div class="d-flex align-items-end mb-3 justify-content-between">
+            <h6 class="mb-0"><small>{{ content.field_event_date }}</small></h6>
+            {{ content.addtoany }}
+          </div>
+          <h4 class="mb-3">{{ node.title.value }}</h4>
+          {{ content.body }}
+        </div>
+      </div>
+    {% endblock %}
+  </div>
+</article>
+</div>

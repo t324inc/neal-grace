@@ -1,0 +1,17 @@
+uuid: 1120b86b-9a32-43d8-b582-81d45a3b5b6c
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: KiGmQ11s1_V2BcumnIixsVskY5WJGBEVDQvbxQyLubs
+name: default
+label: Default
+effects:
+  0d7db5b1-3edc-4d78-b0e2-95d91949205c:
+    uuid: 0d7db5b1-3edc-4d78-b0e2-95d91949205c
+    id: image_scale
+    weight: 1
+    data:
+      width: 1920
+      height: null
+      upscale: false

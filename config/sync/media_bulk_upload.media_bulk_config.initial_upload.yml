@@ -1,0 +1,13 @@
+uuid: d0341d99-ab9a-40ac-9c95-9f2c8982a0aa
+langcode: en
+status: true
+dependencies: {  }
+id: initial_upload
+label: 'Initial Upload'
+media_types:
+  image: image
+  audio: 0
+  file: 0
+  remote_video: 0
+  video: 0
+form_mode: media_library

@@ -1,0 +1,22 @@
+uuid: f1f03483-b962-42d9-a238-52236531b6de
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.file
+_core:
+  default_config_hash: aWg0gRQ4WiXvFTiqBTCLWU7Y7uAhOIjzIUbcbeMVsHM
+id: media.file.name
+field_name: name
+entity_type: media
+bundle: file
+label: Name
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

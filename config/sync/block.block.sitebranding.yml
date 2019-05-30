@@ -1,0 +1,25 @@
+uuid: 48c5bf20-cc2f-4178-96d0-c42db5e1e900
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - d324theme
+_core:
+  default_config_hash: jOSo5JLx1o1RqKSW9zon2y1brLS_KRUacklpOXcJL5w
+id: sitebranding
+theme: d324theme
+region: navbar_branding
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

@@ -1,0 +1,9 @@
+uuid: 4a9a2fe7-2610-4b0f-ada1-d2cbaaf148d6
+langcode: en
+status: true
+dependencies: {  }
+id: stripe_view
+label: 'Stripe View'
+icon_uuid: null
+description: 'Embeds a view into a landing page stripe'
+behavior_plugins: {  }

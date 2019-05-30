@@ -1,0 +1,32 @@
+uuid: 66e3d51b-7e6d-49ec-8b22-de26cccd3b68
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.d08_square
+    - image.style.d10_square
+    - image.style.d11_square
+  module:
+    - d324_media
+_core:
+  default_config_hash: tF48xdM9lMmgqGrQZeC3M6Pmj7IdFteFSoHGJ0F78J8
+id: d11_square
+label: 'Display 11 responsive square 1:1'
+image_style_mappings:
+  -
+    breakpoint_id: d324_media.screen-sm-max
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: d08_square
+  -
+    breakpoint_id: d324_media.screen-md-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: d10_square
+  -
+    breakpoint_id: d324_media.screen-lg-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: d11_square
+breakpoint_group: d324_media
+fallback_image_style: d08_square

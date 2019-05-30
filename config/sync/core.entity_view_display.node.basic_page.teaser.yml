@@ -1,0 +1,23 @@
+uuid: caa5fd94-8e26-4044-a148-9d967ac7c444
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.basic_page.field_page_sections
+    - node.type.basic_page
+  module:
+    - user
+id: node.basic_page.teaser
+targetEntityType: node
+bundle: basic_page
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_page_sections: true

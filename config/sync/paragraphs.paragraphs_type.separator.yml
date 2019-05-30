@@ -1,0 +1,9 @@
+uuid: 8b4892b2-8fd4-471b-815b-86614c31158e
+langcode: en
+status: true
+dependencies: {  }
+id: separator
+label: Separator
+icon_uuid: null
+description: 'A separator/spacer with optional horizontal divider'
+behavior_plugins: {  }

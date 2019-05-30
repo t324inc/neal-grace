@@ -1,0 +1,19 @@
+uuid: 4c6b8d5d-e325-4a3b-95f7-2061b267dadf
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - paragraphs
+id: paragraph.field_call_to_action_buttons
+field_name: field_call_to_action_buttons
+entity_type: paragraph
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 3
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,11 @@
+{#
+/**
+ * @file
+ * Template for the page title.
+ */
+#}
+{{ title_prefix }}
+{% if title %}
+  <h1 class="page-title text-white m-0">{{ title|render|striptags }}</h1>
+{% endif %}
+{{ title_suffix }}

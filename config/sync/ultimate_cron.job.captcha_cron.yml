@@ -1,0 +1,17 @@
+uuid: 29d9cf3a-de72-4cd6-a52f-8e4eec148f04
+langcode: en
+status: true
+dependencies:
+  module:
+    - captcha
+title: 'Default cron handler'
+id: captcha_cron
+weight: 0
+module: captcha
+callback: captcha_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

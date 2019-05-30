@@ -1,0 +1,10 @@
+style:
+  version: 1.0
+  css:
+    theme:
+      assets/css/neal_grace.style.css: {}
+  js:
+    assets/js/neal_grace.script.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal

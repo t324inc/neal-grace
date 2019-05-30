@@ -1,0 +1,14 @@
+uuid: a24f9143-edeb-4df9-9844-22ac003e2666
+langcode: en
+status: false
+dependencies:
+  enforced:
+    module:
+      - node
+      - diff
+  module:
+    - node
+id: node.diff
+label: 'Revision comparison'
+targetEntityType: node
+cache: true
