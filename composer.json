@@ -33,7 +33,9 @@
         "drupal/drupal-library-installer-plugin": "^0.3",
         "drupal/console": "^1.0.2",
         "drush/drush": "^9.0.0",
-        "drupal/drupal": "*"
+        "drupal/drupal": "*",
+        "t324inc/d324_event",
+        "t324inc/d324_testimonial"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
