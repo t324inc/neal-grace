@@ -34,8 +34,8 @@
         "drupal/console": "^1.0.2",
         "drush/drush": "^9.0.0",
         "drupal/drupal": "*",
-        "t324inc/d324_event",
-        "t324inc/d324_testimonial"
+        "t324inc/d324_event":  "8.7.x-dev",
+        "t324inc/d324_testimonial": "8.7.x-dev"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
