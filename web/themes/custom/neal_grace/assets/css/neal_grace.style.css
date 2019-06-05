@@ -986,14 +986,8 @@ article p a:hover {
 }
 
 .feature-box .feature-box-ctas {
-  margin-top: -0.9375rem;
-  margin-bottom: -1.875rem;
   -webkit-transform: translateY(45%);
           transform: translateY(45%);
-}
-
-.feature-box .feature-box-ctas a {
-  font-size: 1rem;
 }
 
 img.img-thumbnail {
