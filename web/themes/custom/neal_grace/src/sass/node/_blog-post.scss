@@ -6,3 +6,38 @@
   padding: .75rem 1rem;
   border-bottom: 1px solid #ccc;
 }
+
+.path-node.page-node-type-blog-post {
+
+  main {
+    min-height: calc(100vh - 362px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .node {
+      padding: 30px 60px;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+      margin-bottom: 25px;
+
+      p {
+        font-size: 20px;
+      }
+    }
+
+    .blog-post__field-categories {
+      text-align: center;
+      color: #C84630;
+      font-size: 18px;
+      font-weight: bold;
+      margin: 0 0 10px;
+    }
+  }
+
+  .addtoany_list {
+    margin: 30px auto;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -172,6 +172,7 @@ module:
   ds: 1
   extlink: 1
   menu_link_content: 1
+  pathauto: 1
   tour_builder: 1
   ds_extras: 2
   views: 10

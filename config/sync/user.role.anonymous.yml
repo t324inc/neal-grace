@@ -12,4 +12,5 @@ permissions:
   - 'access content'
   - 'search content'
   - 'view media'
+  - 'view terms in categories'
   - 'view terms in tags'

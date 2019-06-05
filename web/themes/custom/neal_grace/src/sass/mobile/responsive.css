@@ -1,0 +1,120 @@
+@media (max-width: 767px) {
+  .jumbotron {
+    height: 100vh;
+  }
+  .jumbotron h1 {
+    font-size: 1.5rem;
+    padding: 0;
+  }
+  .jumbotron .calls-to-action {
+
+  }
+  .jumbotron .calls-to-action a, .book--teaser .feature-box-ctas a {
+    margin: 15px 5px !important;
+    padding: 20px;
+  }
+  .feature-box__field-heading, .stripe-box__field-heading {
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .page__footer .container {
+    padding: 0;
+  }
+  .block--d324developercopyrightblock, .block--d324clientcopyrightblock {
+    width: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .page__above-footer .btn {
+    margin: 15px auto 0;
+  }
+  .testimonial-card {
+    padding: 0 15px;
+    margin: 60px 0;
+    height: 380px;
+  }
+  .slick--view--testimonial-slider .slick-next, .slick--view--testimonial-slider .slick-prev {
+    display: none !important;
+  }
+
+  .landing-page .stripe-column-2 {
+    margin-top: 38px;
+  }
+  .landing-page .stripe-column-2 .paragraph--id--26 h6 small {
+    font-size: 1.58rem;
+    color: #1E2345;
+    font-family: Merriweather, Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+  }
+  .landing-page .stripe-column-2 .paragraph--id--26 h6 {
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+  .paragraph--id--23 .row {
+    padding: 50px 0 !important;
+  }
+  .paragraph--id--15 .media {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .paragraph--id--15 .feature-box__field-featured-media {
+    text-align: center;
+    background: #fff;
+    padding-bottom: 50px;
+  }
+  .paragraph--id--17 .media {
+    display: none;
+  }
+
+  .paragraph--id--17 .photo {
+    content: url(/sites/default/files/neal_grace_thumb.jpg);
+    margin: 0 auto;
+    border-radius: 50%;
+    padding: 20px;
+    width: 250px;
+  }
+
+  .paragraph--id--15 .shadow {
+    box-shadow: none !important;
+  }
+
+  .paragraph--id--48 .item {
+    padding: 0;
+  }
+
+  .card-img-overlay {
+    padding: 0;
+  }
+
+  .event--teaser .date-content {
+    padding-top: 0 !important;
+  }
+
+  .paragraph--id--15 .bg-white.shadow {
+    padding-bottom: 0 !important;
+  }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .paragraph--id--15 .col-md-4.shadow, .paragraph--id--17 .col-md-4.shadow {
+    margin: 10rem 0;
+  }
+  .testimonial-card {
+    min-height: 460px;
+  }
+  .event--teaser .date-content {
+    padding-top: 0 !important;
+  }
+  .paragraph--id--15 {
+    margin-top: -1rem;
+  }
+  .paragraph--id--27 {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+  }
+  .view-testimonial-index .testimonial-card {
+    min-height: 100px;
+  }
+}

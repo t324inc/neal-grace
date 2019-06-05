@@ -30,6 +30,8 @@
         {% set link_attributes = link_attributes.addClass('btn btn-primary shadow') %}
         {{ link(item.title, item.uri, link_attributes) }}
       {%- endfor -%}
+      <span> <a href="/books" class="btn btn-primary shadow"> return to book list
+      </a> </span>
     </div>
     <div class="col-md">
       <div class="d-flex justify-content-between">

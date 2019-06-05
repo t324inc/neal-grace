@@ -12,23 +12,27 @@
   not node.isPublished() ? 'node--unpublished',
   node.bundle|clean_class,
   node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
-  'p-0'
+  'p-0 mb-9 mb-lg-0'
 ]
 %}
+{% set details_block %}
+  {{ content.field_publisher }}
+  {{ content.field_book_date }}
+  {{ content.field_length }}
+{% endset %}
 <article {{ attributes.addClass(classes) }}>
-  {% include '@d324theme/feature_box/feature_box.twig' with {
+  {% include '@neal_grace/feature_box/feature_box.twig' with {
     main_url: path('entity.node.canonical', {'node': node.id}),
     feature_image: content.field_cover_art,
+    feature_details: details_block,
     heading: node.title.value,
-    sub_heading: content.field_subtitle,
+    share_links: content.addtoany,
+    sub_heading: node.field_subtitle.value,
     text: content.field_summary,
     calls_to_action: node.field_button_links,
     direction: 'left'
   } %}
-  <div class="book__teaser-details px-3 mt-4 mb-9">
-    {{ content.field_publisher }}
-    {{ content.field_book_date }}
-    {{ content.field_length }}
-    {{ content.field_isbn }}
+  <div class="book__teaser-details d-none d-lg-block px-3 mt-4 mb-9">
+    {{ details_block }}
   </div>
 </article>

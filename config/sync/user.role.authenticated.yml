@@ -19,4 +19,5 @@ permissions:
   - 'use text format basic_html'
   - 'use text format ckeditor_limited'
   - 'view media'
+  - 'view terms in categories'
   - 'view terms in tags'

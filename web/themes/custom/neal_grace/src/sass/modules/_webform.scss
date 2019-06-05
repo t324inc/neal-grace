@@ -1,7 +1,6 @@
 .webform-element--title-inline {
   display: flex;
-
-  @extend .shadow-sm;
+  box-shadow: $box-shadow-sm;
 
   label.form-required:after {
     display: none;

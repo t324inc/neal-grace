@@ -10,7 +10,7 @@
     placement: 'sticky-top',
     container: 'fixed',
     color: 'dark',
-    utility_classes: ['bg-primary', 'text-accent', 'align-center', 'justify-space-between', 'px-2', 'px-lg-4', 'px-xl-6', 'py-2'],
+    utility_classes: ['bg-primary', 'text-accent', 'align-center', 'justify-space-between'],
   } %}
 
     {% block above_navbar %}
@@ -42,22 +42,25 @@
     {% endblock %}
   {% endembed %}
 
-  {% if page.titlearea %}
-    <header class="page__title-area">
-      <div class="img-overlay dark text-white py-4 align-center">
-        <img src="/sites/default/files/2019-05/Rectangle%201.png" class="img-bg" alt="Neal Grace Author Website">
-        <div class="overlay page__titlearea-inner d-flex justify-content-md-between align-items-md-center">
-          <div class="container">
-            {% block titlearea %}
-              {{ page.titlearea }}
-            {% endblock %}
+  {% block titlearea %}
+    {% if page.titlearea %}
+      <header class="page__title-area">
+        <div class="img-overlay dark text-white py-4 align-center">
+          <img src="/sites/default/files/2019-05/Rectangle%201.png" class="img-bg" alt="Neal Grace Author Website">
+          <div class="overlay page__titlearea-inner d-flex justify-content-md-between align-items-md-center">
+            <div class="container px-3">
+              {% block titleinner %}
+                {{ page.titlearea }}
+              {% endblock %}
+            </div>
           </div>
         </div>
-      </div>
-    </header>
-  {% endif %}
+      </header>
+    {% endif %}
+  {% endblock %}
 
-  <main class="pt-5 pb-5 container-fluid clearfix">
+  {% block main %}
+  <main class="my-lg-8 my-sm-7 my-6 container-fluid clearfix">
     {% if page.header %}
       <header class="page__header mb-3">
         <div class="container">
@@ -88,6 +91,7 @@
       </div>
     {% endif %}
   </main>
+  {% endblock %}
 
   {% if page.above_footer %}
     <div class="page__above-footer">
@@ -107,7 +111,7 @@
   {% if page.footer %}
     <footer class="page__footer py-1 justify-space-between bg-dark container-fluid clearfix">
       <div class="container">
-        <div class="d-flex justify-content-md-between align-items-md-center container">
+        <div class="d-flex justify-content-md-between align-items-md-center">
           {{ page.footer }}
         </div>
       </div>

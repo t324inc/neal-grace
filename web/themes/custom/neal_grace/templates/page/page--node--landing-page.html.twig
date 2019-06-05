@@ -1,61 +1,12 @@
-{#
-/**
- * @file
- * Template for the main page.
- */
-#}
-<div class="page">
+{% extends  "page.html.twig" %}
 
-  {% embed '@d324theme/navbar/navbar.twig' with {
-    placement: 'sticky-top',
-    container: 'fixed',
-    color: 'dark',
-    utility_classes: ['bg-primary', 'text-accent', 'align-center', 'justify-space-between', 'px-2', 'px-lg-4', 'px-xl-6', 'py-2'],
-  } %}
+{# Remove title region #}
+{% block titlearea %}
+{% endblock %}
 
-    {% block above_navbar %}
-      {% if page.above_navbar %}
-        {{ page.above_navbar }}
-      {% endif %}
-    {% endblock %}
-
-    {% block branding %}
-      {% if page.navbar_branding %}
-        {{ page.navbar_branding }}
-      {% endif %}
-    {% endblock %}
-
-    {% block left %}
-      {% if page.navbar_left %}
-        <div class="mr-auto">
-          {{ page.navbar_left }}
-        </div>
-      {% endif %}
-    {% endblock %}
-
-    {% block right %}
-      {% if page.navbar_right %}
-        <div class="ml-auto">
-          {{ page.navbar_right }}
-        </div>
-      {% endif %}
-    {% endblock %}
-  {% endembed %}
-
-  {% if page.titlearea %}
-    <header class="page__title-area">
-      <div class="img-overlay dark text-white py-4 align-center">
-        <img src="/sites/default/files/2019-05/Rectangle%201.png" class="img-bg" alt="Neal Grace Author Website">
-        <div class="overlay page__titlearea-inner d-flex justify-content-md-between align-items-md-center">
-          <div class="container">
-            {{ page.titlearea }}
-          </div>
-        </div>
-      </div>
-    </header>
-  {% endif %}
-
-  <main class="p-0 clearfix">
+{# Replace main #}
+{% block main %}
+  <main class="mb-lg-8 mb-sm-7 mb-6 clearfix">
     {% if page.header %}
       <header class="page__header mb-3">
         <div class="container">
@@ -72,29 +23,4 @@
       </div>
     {% endif %}
   </main>
-
-  {% if page.above_footer %}
-    <div class="page__above-footer">
-      <div class="img-overlay bg-primary text-white">
-        <img src="/sites/default/files/2019-05/Backing.jpg" class="img-bg" alt="Neal Grace Author Website">
-        <div class="overlay">
-          <div class="container">
-            <div class="d-flex justify-content-md-between align-items-md-center">
-              {{ page.above_footer }}
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  {% endif %}
-
-  {% if page.footer %}
-    <footer class="page__footer py-1 justify-space-between bg-dark container-fluid clearfix">
-      <div class="container">
-        <div class="d-flex justify-content-md-between align-items-md-center container">
-          {{ page.footer }}
-        </div>
-      </div>
-    </footer>
-  {% endif %}
-</div>
+{% endblock %}

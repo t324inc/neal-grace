@@ -3,8 +3,7 @@
 
 .webform-element--title-inline {
   display: flex;
-
-  @extend .shadow-sm;
+  box-shadow: $box-shadow-sm;
 
   label.form-required:after {
     display: none;
@@ -35,4 +34,12 @@
 
 .paragraph>.paragraph__column {
   padding: 0;
+}
+
+.page-node-type-landing-page .page__content .settings-tray-editable {
+  margin: 0 !important;
+
+  .nav-tabs {
+    display: none;
+  }
 }

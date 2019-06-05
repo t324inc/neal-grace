@@ -20,22 +20,39 @@ h6 {
   }
 }
 
+h1, h2, h3 {
+  margin-bottom: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  a, a:hover {
+    color: $primary;
+  }
+}
+
 // -----------------------------------------------------------------------------
 // TEXT
 // -----------------------------------------------------------------------------
 
 p {
-
+  margin-bottom: 2 * $spacer;
+  line-height: 1.875em;
 }
 
 // -----------------------------------------------------------------------------
 // LINKS
 // -----------------------------------------------------------------------------
 
-a {
+article p a {
+  // This color doesn't provide sufficient contrast to be considered accessible
+  // so we'll add a heavier weight and a hover-enabled highlight? Or...?
+  font-weight: 600;
+  transition: $transition-base;
+  transition-duration: .15s;
 
-  @include hover {
-
+  &:hover {
+    background: rgba(0,0,0,.1);
+    text-decoration: none;
   }
 }
 
@@ -56,7 +73,7 @@ a {
 }
 
 .btn, .more-link a {
-  @extend .shadow;
+  box-shadow: $box-shadow;
   @include button-variant($secondary, darken($secondary, 7.5%), darken($secondary, 10%), lighten($secondary,5%), lighten($secondary, 10%), darken($secondary,30%));
   font-weight: bold;
   color: $white;
@@ -71,8 +88,18 @@ a {
 }
 
 .calls-to-action a {
-  margin: 2rem .75rem;
+  margin: 0rem .5rem;
 }
+
+.feature-box .feature-box-ctas {
+  margin-top: -$spacer;
+  margin-bottom: -2 * $spacer;
+  transform: translateY(45%);
+  a {
+    font-size: 1rem;
+  }
+}
+
 
 // -----------------------------------------------------------------------------
 // Forms

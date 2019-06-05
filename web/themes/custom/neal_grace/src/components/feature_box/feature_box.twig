@@ -1,0 +1,82 @@
+{#
+/**
+ * @file
+ * Template for a feature_box component.
+ *
+ * Available config:
+ * - main_url : URL string
+ * - feature_image: image
+ * - feature_details: markup
+ * - heading: string
+ * - sub_heading: string
+ * - share_links: links
+ * - text: content text
+ * - calls_to_action: array of links
+ * - direction: left or right
+ * - attributes: Attributes array.
+ */
+#}
+{% set css_classes = [
+  'feature-box',
+  'container'
+] %}
+{% set flex_direction = direction == 'left' ? 'flex-sm-row-reverse' : 'flex-sm-row' %}
+<div{{ attributes.addClass(css_classes) }}>
+  <div class="row flex-column-reverse no-gutters {{ flex_direction }} py-lg-0">
+    {% set padding_direction = direction == 'left' ? 'pl-md-5' : 'pr-md-5' %}
+    <div class="col-md-8 px-0 {{ padding_direction }} px-lg-0 py-0 d-flex flex-column justify-content-start justify-content-lg-center">
+      <div class="d-flex flex-grow-0 flex-column p-lg-5 bg-lg-white shadow-lg-md">
+        <div class="row flex-sm-row flex-column no-gutters justify-content-between flex-nowrap">
+          {% if heading %}
+            <div class="col-md-auto flex-shrink-1">
+              {% if heading %}
+                <h3 class="my-0">
+                  {% if main_url %}
+                    <a href="{{ main_url }}">
+                  {% endif %}
+                  {{ heading }}
+                  {% if main_url %}
+                    </a>
+                  {% endif %}
+                </h3>
+              {% endif %}
+              {% if sub_heading %}
+                <h6 class="mt-2 mb-0">{{ sub_heading }}</h6>
+              {% endif %}
+            </div>
+          {% endif %}
+          {% if share_links %}
+            <div class="col-md-auto mt-3 mt-sm-0 pl-3-sm flex-grow-0">
+              {{ share_links }}
+            </div>
+          {% endif %}
+        </div>
+
+        <div class="feature-text mt-5 mb-3">
+          {{ text }}
+        </div>
+        {% set button_direction = direction == 'left' ? 'text-align-right' : 'text-align-left' %}
+        <div class="feature-box-ctas {{ button_direction }} mb-8 mt-n5 mb-lg-n5 mt-lg-n3">
+          {%- for item in calls_to_action -%}
+            {% set link_attributes = create_attribute() %}
+            {% set link_attributes = link_attributes.addClass('btn btn-primary') %}
+            {{ link(item.title, item.uri, link_attributes) }}
+          {%- endfor -%}
+          {% if main_url %}
+            <a href="{{ main_url }}" class="btn btn-primary">more info</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-5 mt-0 my-sm-0 d-flex flex-column justify-content-lg-center justify-content-start">
+      <div class="feature-box__image-wrapper shadow">
+      {% if main_url %}<a href="{{ main_url }}">{% endif %}
+      {{ feature_image }}
+      {% if main_url %}</a>{% endif %}
+      </div>
+      <div class="book__teaser-details d-none d-sm-block d-lg-none px-3 mt-4 mb-9">
+        {{ feature_details }}
+      </div>
+    </div>
+  </div>
+</div>

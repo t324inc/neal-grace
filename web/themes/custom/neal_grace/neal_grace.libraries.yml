@@ -1,3 +1,9 @@
+bootstrap:
+  version: 1.0
+  css:
+    component:
+      assets/css/neal_grace.bootstrap.css: {}
+
 style:
   version: 1.0
   css:

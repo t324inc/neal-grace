@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.blog_post.field_yoast_seo
     - node.type.blog_post
   module:
+    - ds
     - text
     - user
 id: node.blog_post.teaser
@@ -36,8 +37,16 @@ content:
     region: content
     label: hidden
     settings:
-      link: true
-    third_party_settings: {  }
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
 hidden:
   field_meta_tags: true
   field_tags: true

@@ -17,7 +17,7 @@ id: contact
 title: Contact
 description: 'Basic email contact webform.'
 category: ''
-elements: "name:\n  '#type': textfield\n  '#title': name\n  '#title_display': inline\n  '#required': true\n  '#default_value': '[current-user:display-name]'\nphone:\n  '#type': tel\n  '#title': phone\n  '#title_display': inline\n  '#international': true\n  '#international_initial_country': US\nemail:\n  '#type': email\n  '#title': email\n  '#title_display': inline\n  '#default_value': '[current-user:mail]'\nsubject:\n  '#type': textfield\n  '#title': subject\n  '#title_display': inline\nmessage:\n  '#type': textarea\n  '#title': message\n  '#title_display': inline\n  '#required': true\n  '#test': 'Please ignore this email.'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'Send message'"
+elements: "name:\n  '#type': textfield\n  '#title': name\n  '#title_display': inline\n  '#required': true\nphone:\n  '#type': tel\n  '#title': phone\n  '#title_display': inline\nemail:\n  '#type': email\n  '#title': email\n  '#title_display': inline\n  '#required': true\nsubject:\n  '#type': textfield\n  '#title': subject\n  '#title_display': inline\nmessage:\n  '#type': textarea\n  '#title': message\n  '#title_display': inline\n  '#required': true\n  '#test': 'Please ignore this email.'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': submit"
 css: ''
 javascript: ''
 settings:
@@ -216,7 +216,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: _default
+      to_mail: ivan@t324.com
       to_options: {  }
       cc_mail: ''
       cc_options: {  }

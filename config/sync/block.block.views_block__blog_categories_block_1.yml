@@ -1,6 +1,6 @@
 uuid: 1f866ad4-2835-4e7c-81d9-874dc4143907
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.blog_categories

@@ -16,7 +16,7 @@
 %}
 <article{{ attributes.addClass(classes) }}>
   {% block content %}
-    <div{{ content_attributes.addClass('text-align-center testimonial-card shadow') }}>
+    <div{{ content_attributes.addClass('text-align-center testimonial-card shadow d-flex flex-column justify-content-center') }}>
       <h6>{{ content.field_testimonial_quote }}</h6>
       {% if content.field_attribution_name %}
         <p class="testimonial__attribution-name">

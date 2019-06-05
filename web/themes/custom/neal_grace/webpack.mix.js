@@ -76,7 +76,8 @@ mix.browserSync({
  |--------------------------------------------------------------------------
  */
 
-mix.sass('src/sass/neal_grace.style.scss', 'css');
+mix.sass('src/sass/neal_grace.bootstrap.scss', 'css')
+  .sass('src/sass/neal_grace.style.scss', 'css');
 
 /*
  |--------------------------------------------------------------------------

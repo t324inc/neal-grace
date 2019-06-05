@@ -25,6 +25,7 @@ regions:
   footer: Footer
 
 libraries:
+  - neal_grace/bootstrap
   - neal_grace/style
 
 libraries-override:

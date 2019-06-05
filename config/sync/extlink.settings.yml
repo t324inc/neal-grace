@@ -6,9 +6,9 @@ extlink_target: true
 extlink_subdomains: true
 extlink_mailto_class: '0'
 extlink_img_class: false
-extlink_class: ext
+extlink_class: '0'
 extlink_css_exclude: '.no-ext, .a2a_kit, .a2a_kit a'
 extlink_css_explicit: ''
-extlink_target_no_override: false
-extlink_nofollow: false
-extlink_follow_no_override: false
+extlink_target_no_override: true
+extlink_nofollow: true
+extlink_follow_no_override: true
