@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "62d2b60f403abdde4091ebe55a79cc4f",
+    "content-hash": "068e87c08926fbb319d78b3840d1f0b5",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3764,16 +3764,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.7.2",
+            "version": "8.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "31c01fe3b4eb8817e8ef127382a67c9e9d78e1a9"
+                "reference": "b8ca92d4274048aff6bb020c329596c0e9b91269"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/31c01fe3b4eb8817e8ef127382a67c9e9d78e1a9",
-                "reference": "31c01fe3b4eb8817e8ef127382a67c9e9d78e1a9",
+                "url": "https://api.github.com/repos/drupal/core/zipball/b8ca92d4274048aff6bb020c329596c0e9b91269",
+                "reference": "b8ca92d4274048aff6bb020c329596c0e9b91269",
                 "shasum": ""
             },
             "require": {
@@ -3798,7 +3798,7 @@
                 "ext-xml": "*",
                 "guzzlehttp/guzzle": "^6.2.1",
                 "masterminds/html5": "^2.1",
-                "paragonie/random_compat": "^1.0|^2.0",
+                "paragonie/random_compat": "^1.0|^2.0|^9.99.99",
                 "pear/archive_tar": "^1.4",
                 "php": "^5.5.9|>=7.0.8",
                 "stack/builder": "^1.0",
@@ -4007,7 +4007,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2019-05-23T07:22:46+00:00"
+            "time": "2019-06-05T19:21:30+00:00"
         },
         {
             "name": "drupal/createandcontinue",
@@ -5182,6 +5182,69 @@
             }
         },
         {
+            "name": "drupal/entity_usage",
+            "version": "2.0.0-alpha8",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/entity_usage.git",
+                "reference": "8.x-2.0-alpha8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/entity_usage-8.x-2.0-alpha8.zip",
+                "reference": "8.x-2.0-alpha8",
+                "shasum": "577da1bf89d7520b07ba1af5be8553bac5ceb53f"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "require-dev": {
+                "drupal/block_field": "~1.0",
+                "drupal/dynamic_entity_reference": "~1.0",
+                "drupal/entity_embed": "~1.0",
+                "drupal/entity_reference_revisions": "~1.0",
+                "drupal/paragraphs": "~1.0",
+                "drupal/webform": "~5.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.0-alpha8",
+                    "datestamp": "1541781780",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "marcoscano",
+                    "homepage": "https://www.drupal.org/user/1288796"
+                },
+                {
+                    "name": "seanB",
+                    "homepage": "https://www.drupal.org/user/545912"
+                }
+            ],
+            "description": "Track usage of entities referenced by other entities",
+            "homepage": "https://www.drupal.org/project/entity_usage",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/entity_usage",
+                "issues": "http://drupal.org/project/issues/entity_usage"
+            }
+        },
+        {
             "name": "drupal/entityqueue",
             "version": "1.0.0-beta5",
             "source": {
@@ -5496,17 +5559,17 @@
         },
         {
             "name": "drupal/field_group",
-            "version": "3.0.0-beta1",
+            "version": "3.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/field_group.git",
-                "reference": "8.x-3.0-beta1"
+                "reference": "8.x-3.0-rc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/field_group-8.x-3.0-beta1.zip",
-                "reference": "8.x-3.0-beta1",
-                "shasum": "a5dfb66385be7a1b3db232e49779d5bc530a048e"
+                "url": "https://ftp.drupal.org/files/projects/field_group-8.x-3.0-rc1.zip",
+                "reference": "8.x-3.0-rc1",
+                "shasum": "e291b5468c834a344e9aa6cafd3a76171d473a22"
             },
             "require": {
                 "drupal/core": "*"
@@ -5517,15 +5580,12 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-beta1",
+                    "version": "8.x-3.0-rc1",
                     "datestamp": "1558647185",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
-                },
-                "patches_applied": {
-                    "Issue #2921228: Accordion does not work": "https://www.drupal.org/files/issues/field_group_accordion-2921228-3.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5612,6 +5672,62 @@
             "homepage": "https://www.drupal.org/project/focal_point",
             "support": {
                 "source": "https://git.drupalcode.org/project/focal_point"
+            }
+        },
+        {
+            "name": "drupal/google_analytics",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/google_analytics.git",
+                "reference": "8.x-3.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/google_analytics-8.x-3.0.zip",
+                "reference": "8.x-3.0",
+                "shasum": "18179854152cae44be2a5ed5de5550bc6e131c70"
+            },
+            "require": {
+                "drupal/core": "~8.5"
+            },
+            "require-dev": {
+                "drupal/php": "*",
+                "drupal/token": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-3.0",
+                    "datestamp": "1548968580",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "hass",
+                    "homepage": "https://www.drupal.org/u/hass"
+                },
+                {
+                    "name": "See other contributors",
+                    "homepage": "https://www.drupal.org/node/49388/committers"
+                }
+            ],
+            "description": "Allows your site to be tracked by Google Analytics by adding a Javascript tracking code to every page.",
+            "homepage": "https://www.drupal.org/project/google_analytics",
+            "support": {
+                "source": "https://git.drupal.org/project/google_analytics.git",
+                "issues": "https://www.drupal.org/project/issues/google_analytics"
             }
         },
         {
@@ -6884,6 +7000,73 @@
             }
         },
         {
+            "name": "drupal/menu_breadcrumb",
+            "version": "1.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/menu_breadcrumb.git",
+                "reference": "8.x-1.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/menu_breadcrumb-8.x-1.9.zip",
+                "reference": "8.x-1.9",
+                "shasum": "c68782d805b12b1d15d4e0bea2e16a76dac89bd2"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.9",
+                    "datestamp": "1554988685",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "RyanPrice",
+                    "homepage": "https://www.drupal.org/user/873848"
+                },
+                {
+                    "name": "aaron",
+                    "homepage": "https://www.drupal.org/user/33420"
+                },
+                {
+                    "name": "gdevlugt",
+                    "homepage": "https://www.drupal.org/user/167273"
+                },
+                {
+                    "name": "rphair",
+                    "homepage": "https://www.drupal.org/user/3196607"
+                },
+                {
+                    "name": "vaibhavjain",
+                    "homepage": "https://www.drupal.org/user/1159692"
+                },
+                {
+                    "name": "xurizaemon",
+                    "homepage": "https://www.drupal.org/user/76026"
+                }
+            ],
+            "description": "Create breadcrumbs from nested menu titles and/or taxonomy membership.",
+            "homepage": "https://www.drupal.org/project/menu_breadcrumb",
+            "support": {
+                "source": "https://git.drupalcode.org/project/menu_breadcrumb"
+            }
+        },
+        {
             "name": "drupal/menu_position",
             "version": "1.0.0-alpha1",
             "source": {
@@ -6937,6 +7120,64 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/menu_position",
                 "issues": "https://www.drupal.org/project/issues/menu_position"
+            }
+        },
+        {
+            "name": "drupal/menu_trail_by_path",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/menu_trail_by_path.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/menu_trail_by_path-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "52261e3ad3630e88bfc2a147e3056844f5584f62"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1482006782",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "patches_applied": {
+                    "Issue #2914746 Fatal error after installing module": "https://www.drupal.org/files/issues/2019-05-14/menu_trail_by_path-fatal_error_on_menu_active_trail_service_override-2914746-13.patch"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "SeriousMatters",
+                    "homepage": "https://www.drupal.org/user/290439"
+                },
+                {
+                    "name": "davy-r",
+                    "homepage": "https://www.drupal.org/user/3278771"
+                },
+                {
+                    "name": "redndahead",
+                    "homepage": "https://www.drupal.org/user/160320"
+                }
+            ],
+            "description": "Expand menus and set active-trail according to the current path.",
+            "homepage": "https://www.drupal.org/project/menu_trail_by_path",
+            "support": {
+                "source": "https://git.drupalcode.org/project/menu_trail_by_path"
             }
         },
         {
@@ -7072,21 +7313,21 @@
         },
         {
             "name": "drupal/page_manager",
-            "version": "4.0.0-beta3",
+            "version": "4.0.0-beta4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/page_manager.git",
-                "reference": "8.x-4.0-beta3"
+                "reference": "8.x-4.0-beta4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/page_manager-8.x-4.0-beta3.zip",
-                "reference": "8.x-4.0-beta3",
-                "shasum": "d4776dd32ca34f647bf7f2cfb1acf4800646e231"
+                "url": "https://ftp.drupal.org/files/projects/page_manager-8.x-4.0-beta4.zip",
+                "reference": "8.x-4.0-beta4",
+                "shasum": "f77d57fa0f0a734c26d9119850672a51e2760d5f"
             },
             "require": {
-                "drupal/core": "^8.0.5",
-                "drupal/ctools": "~3"
+                "drupal/core": "~8.5",
+                "drupal/ctools": "~3.1"
             },
             "type": "drupal-module",
             "extra": {
@@ -7094,7 +7335,7 @@
                     "dev-4.x": "4.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-4.0-beta3",
+                    "version": "8.x-4.0-beta4",
                     "datestamp": "1559135889",
                     "security-coverage": {
                         "status": "not-covered",
@@ -7102,8 +7343,7 @@
                     }
                 },
                 "patches_applied": {
-                    "Issue #2665328: Variants take entity label not the variant title": "https://www.drupal.org/files/issues/2018-12-12/2665328-variants-take-entity-label-87.patch",
-                    "Issue #3033057: Page Manager currently not working with CTools 3.1": "https://www.drupal.org/files/issues/2019-02-23/3033057-13.patch"
+                    "Issue #2665328: Variants take entity label not the variant title": "https://www.drupal.org/files/issues/2018-12-12/2665328-variants-take-entity-label-87.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -10453,33 +10693,29 @@
         },
         {
             "name": "paragonie/random_compat",
-            "version": "v2.0.18",
+            "version": "v9.99.99",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "0a58ef6e3146256cc3dc7cc393927bcc7d1b72db"
+                "reference": "84b4dfb120c6f9b4ff7b3685f9b8f1aa365a0c95"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/0a58ef6e3146256cc3dc7cc393927bcc7d1b72db",
-                "reference": "0a58ef6e3146256cc3dc7cc393927bcc7d1b72db",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/84b4dfb120c6f9b4ff7b3685f9b8f1aa365a0c95",
+                "reference": "84b4dfb120c6f9b4ff7b3685f9b8f1aa365a0c95",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.2.0"
+                "php": "^7"
             },
             "require-dev": {
-                "phpunit/phpunit": "4.*|5.*"
+                "phpunit/phpunit": "4.*|5.*",
+                "vimeo/psalm": "^1"
             },
             "suggest": {
                 "ext-libsodium": "Provides a modern crypto API that can be used to generate random bytes."
             },
             "type": "library",
-            "autoload": {
-                "files": [
-                    "lib/random.php"
-                ]
-            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -10498,7 +10734,7 @@
                 "pseudorandom",
                 "random"
             ],
-            "time": "2019-01-03T20:59:08+00:00"
+            "time": "2018-07-02T15:55:56+00:00"
         },
         {
             "name": "pear/archive_tar",
@@ -12679,16 +12915,16 @@
         },
         {
             "name": "symfony/var-dumper",
-            "version": "v4.3.0",
+            "version": "v4.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "2fd2ecf7913fb96f0c2e941ca15bb702184c6574"
+                "reference": "f974f448154928d2b5fb7c412bd23b81d063f34b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/2fd2ecf7913fb96f0c2e941ca15bb702184c6574",
-                "reference": "2fd2ecf7913fb96f0c2e941ca15bb702184c6574",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/f974f448154928d2b5fb7c412bd23b81d063f34b",
+                "reference": "f974f448154928d2b5fb7c412bd23b81d063f34b",
                 "shasum": ""
             },
             "require": {
@@ -12751,7 +12987,7 @@
                 "debug",
                 "dump"
             ],
-            "time": "2019-05-01T12:55:49+00:00"
+            "time": "2019-06-05T02:08:12+00:00"
         },
         {
             "name": "symfony/yaml",
@@ -13072,12 +13308,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/t324inc/d324_copyright_block.git",
-                "reference": "500b8434ad746157bc7f4882aeb8670c2e6cf8b9"
+                "reference": "42a0cfeb0a5c946b4c5c1361c230e28de0028ded"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/t324inc/d324_copyright_block/zipball/500b8434ad746157bc7f4882aeb8670c2e6cf8b9",
-                "reference": "500b8434ad746157bc7f4882aeb8670c2e6cf8b9",
+                "url": "https://api.github.com/repos/t324inc/d324_copyright_block/zipball/42a0cfeb0a5c946b4c5c1361c230e28de0028ded",
+                "reference": "42a0cfeb0a5c946b4c5c1361c230e28de0028ded",
                 "shasum": ""
             },
             "require": {
@@ -13112,10 +13348,10 @@
             "description": "Copyright blocks for use in D324 websites.",
             "homepage": "https://github.com/t324inc/d324_copyright_block",
             "support": {
-                "source": "https://github.com/t324inc/d324_copyright_block/tree/8.x-7.x",
+                "source": "https://github.com/t324inc/d324_copyright_block/tree/8.7.3",
                 "issues": "https://github.com/t324inc/d324_copyright_block/issues"
             },
-            "time": "2019-05-30T05:13:54+00:00"
+            "time": "2019-06-07T14:24:19+00:00"
         },
         {
             "name": "t324inc/d324_core",
@@ -13123,12 +13359,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/t324inc/d324_core.git",
-                "reference": "6c98c2bb032f780685e387c8be6c09f6764122e0"
+                "reference": "e387f862d8fa6d2f1fdeadf7347f0ecb03c3408f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/t324inc/d324_core/zipball/6c98c2bb032f780685e387c8be6c09f6764122e0",
-                "reference": "6c98c2bb032f780685e387c8be6c09f6764122e0",
+                "url": "https://api.github.com/repos/t324inc/d324_core/zipball/e387f862d8fa6d2f1fdeadf7347f0ecb03c3408f",
+                "reference": "e387f862d8fa6d2f1fdeadf7347f0ecb03c3408f",
                 "shasum": ""
             },
             "require": {
@@ -13156,7 +13392,7 @@
                 "drupal/config_ignore": "~2.0",
                 "drupal/config_update": "~1.0",
                 "drupal/content_lock": "~1.0",
-                "drupal/core": "^8.7.2",
+                "drupal/core": "^8.7.3",
                 "drupal/createandcontinue": "^1.2",
                 "drupal/ctools": "3.2",
                 "drupal/default_content": "1.0-alpha8",
@@ -13173,7 +13409,8 @@
                 "drupal/extlink": "~1.0",
                 "drupal/fast_404": "~1.0",
                 "drupal/features": "~3.0",
-                "drupal/field_group": "3.0-beta1",
+                "drupal/field_group": "3.0-rc1",
+                "drupal/google_analytics": "^3.0",
                 "drupal/honeypot": "~1.0",
                 "drupal/inline_entity_form": "~1.0",
                 "drupal/kint": "^2.1",
@@ -13190,9 +13427,10 @@
                 "drupal/menu_admin_per_menu": "~1.0",
                 "drupal/menu_block": "~1.0",
                 "drupal/menu_position": "~1.0",
+                "drupal/menu_trail_by_path": "^1.0",
                 "drupal/metatag": "^1.8",
                 "drupal/node_edit_protection": "~1.0",
-                "drupal/page_manager": "4.0-beta3",
+                "drupal/page_manager": "4.0-beta4",
                 "drupal/panels": "~4.0",
                 "drupal/paragraphs": "^1.8",
                 "drupal/password_policy": "3.0-alpha4",
@@ -13259,11 +13497,7 @@
                         "Issue #2920868: Fix fatal errors when we have missing layouts, on an update": "https://www.drupal.org/files/issues/2019-03-03/2920868-12.patch"
                     },
                     "drupal/page_manager": {
-                        "Issue #2665328: Variants take entity label not the variant title": "https://www.drupal.org/files/issues/2018-12-12/2665328-variants-take-entity-label-87.patch",
-                        "Issue #3033057: Page Manager currently not working with CTools 3.1": "https://www.drupal.org/files/issues/2019-02-23/3033057-13.patch"
-                    },
-                    "drupal/field_group": {
-                        "Issue #2921228: Accordion does not work": "https://www.drupal.org/files/issues/field_group_accordion-2921228-3.patch"
+                        "Issue #2665328: Variants take entity label not the variant title": "https://www.drupal.org/files/issues/2018-12-12/2665328-variants-take-entity-label-87.patch"
                     },
                     "drupal/update_helper": {
                         "Issue #3024165: [PATCH] Enhancements, Better messages for the unable to apply updates, drush command and removed the Mark all updates as successful on install": "https://www.drupal.org/files/issues/2019-05-08/3024165-25.patch"
@@ -13285,6 +13519,9 @@
                     },
                     "drupal/color_field": {
                         "Issue #3002836 No functionality of the Spectrum widget on Drupal 8.6.x with latest stable or dev": "https://www.drupal.org/files/issues/2018-11-07/no_functionality_of_almost_all_widgets-3002836-7.patch"
+                    },
+                    "drupal/menu_trail_by_path": {
+                        "Issue #2914746 Fatal error after installing module": "https://www.drupal.org/files/issues/2019-05-14/menu_trail_by_path-fatal_error_on_menu_active_trail_service_override-2914746-13.patch"
                     }
                 }
             },
@@ -13304,7 +13541,7 @@
                 "source": "https://github.com/t324inc/d324_core/tree/8.x-7.x",
                 "issues": "https://github.com/t324inc/d324_core/issues"
             },
-            "time": "2019-06-05T09:45:32+00:00"
+            "time": "2019-06-07T15:36:17+00:00"
         },
         {
             "name": "t324inc/d324_default_content",
@@ -13412,12 +13649,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/t324inc/d324_media.git",
-                "reference": "2a5cfa79ed3e905a351a096dd149b520fd3b18ae"
+                "reference": "4f0730ad7c363c02a1c71ba6741714fa1a6ec498"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/t324inc/d324_media/zipball/2a5cfa79ed3e905a351a096dd149b520fd3b18ae",
-                "reference": "2a5cfa79ed3e905a351a096dd149b520fd3b18ae",
+                "url": "https://api.github.com/repos/t324inc/d324_media/zipball/4f0730ad7c363c02a1c71ba6741714fa1a6ec498",
+                "reference": "4f0730ad7c363c02a1c71ba6741714fa1a6ec498",
                 "shasum": ""
             },
             "require": {
@@ -13522,10 +13759,10 @@
             "description": "Manages type of media contents and entity browsers in the site.",
             "homepage": "https://github.com/t324inc/d324_media",
             "support": {
-                "source": "https://github.com/t324inc/d324_media/tree/8.x-7.x",
+                "source": "https://github.com/t324inc/d324_media/tree/8.7.3",
                 "issues": "https://github.com/t324inc/d324_media/issues"
             },
-            "time": "2019-05-30T05:11:42+00:00"
+            "time": "2019-06-07T14:39:39+00:00"
         },
         {
             "name": "t324inc/d324_testimonial",
@@ -13583,12 +13820,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/t324inc/d324theme.git",
-                "reference": "6eecca17fdaf06aee627de35f49c0bff2b683d1b"
+                "reference": "4ca28b5bef5de52cf16cc9bbb07aa9e45afcf0a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/t324inc/d324theme/zipball/6eecca17fdaf06aee627de35f49c0bff2b683d1b",
-                "reference": "6eecca17fdaf06aee627de35f49c0bff2b683d1b",
+                "url": "https://api.github.com/repos/t324inc/d324theme/zipball/4ca28b5bef5de52cf16cc9bbb07aa9e45afcf0a1",
+                "reference": "4ca28b5bef5de52cf16cc9bbb07aa9e45afcf0a1",
                 "shasum": ""
             },
             "require": {
@@ -13613,10 +13850,10 @@
             "description": "A base theme for D324 based on Radix. It has Bootstrap, Sass, BrowserSync and Font Awesome built-in.",
             "homepage": "https://github.com/t324inc/d324theme",
             "support": {
-                "source": "https://github.com/t324inc/d324theme/tree/8.x-7.x",
+                "source": "https://github.com/t324inc/d324theme/tree/8.7.3",
                 "issues": "https://github.com/t324inc/d324theme/issues"
             },
-            "time": "2019-06-05T06:24:07+00:00"
+            "time": "2019-06-07T15:05:31+00:00"
         },
         {
             "name": "t324inc/d324theme_admin",
@@ -14274,7 +14511,8 @@
         "t324inc/d324": 20,
         "t324inc/d324-updater": 20,
         "t324inc/d324_event": 20,
-        "t324inc/d324_testimonial": 20
+        "t324inc/d324_testimonial": 20,
+        "drupal/entity_usage": 15
     },
     "prefer-stable": true,
     "prefer-lowest": false,
