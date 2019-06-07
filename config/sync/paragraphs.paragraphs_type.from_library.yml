@@ -1,0 +1,11 @@
+uuid: 622b6ab6-91e3-4a99-a4b4-66d683e4e341
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: OJUwL6xTTiHbXZy10swc5Fckkr7qhSm4b0nK3326LO8
+id: from_library
+label: 'From library'
+icon_uuid: null
+description: 'Reuse an existing paragraph from your library'
+behavior_plugins: {  }

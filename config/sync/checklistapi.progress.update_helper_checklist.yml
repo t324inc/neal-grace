@@ -1,6 +1,7 @@
 progress:
-  '#changed': 1558363087
-  '#changed_by': '0'
+  '#changed': 1559885865
+  '#changed_by': '1'
+  '#completed_items': 9
   '#items':
     'd324_core:d324_core_update_8708':
       '#completed': 1558363087
@@ -29,4 +30,3 @@ progress:
     'd324_core:d324_core_optional_update_8703':
       '#completed': 1558363087
       '#uid': '0'
-  '#completed_items': 9

@@ -30,7 +30,12 @@
       color: #C84630;
       font-size: 18px;
       font-weight: bold;
-      margin: 0 0 10px;
+    }
+
+    .blog-post__node-post-date {
+      text-align: center;
+      font-size: .8rem;
+      padding-bottom: 1rem;
     }
   }
 
@@ -40,4 +45,11 @@
     width: 100%;
     text-align: center;
   }
+}
+
+
+.blog-post__node-post-date {
+    text-align: center;
+    font-size: .8rem;
+    padding-bottom: 1rem;
 }

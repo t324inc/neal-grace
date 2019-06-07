@@ -1,0 +1,32 @@
+uuid: 11274574-6073-45ff-a398-5ecba0057a0e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_media
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - paragraphs.paragraphs_type.breakout_container
+id: paragraph.breakout_container.field_media
+field_name: field_media
+entity_type: paragraph
+bundle: breakout_container
+label: 'Background Media'
+description: 'A background image or video to fill and cover the full background of the breakout container, laying underneath any embedded content in the container'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+      remote_video: remote_video
+      video: video
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

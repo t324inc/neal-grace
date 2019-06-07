@@ -93,3 +93,46 @@
     z-index: -1;
   }
 }
+
+@include media-breakpoint-down(lg) {
+
+  .testimonial-card {
+    margin: 5rem;
+  }
+
+  .slick--view--testimonial-slider .slick-prev {
+    margin-left: 2rem;
+  }
+
+  .slick--view--testimonial-slider .slick-next {
+    margin-right: 2rem;
+  }
+}
+
+@include media-breakpoint-down(md) {
+
+  .testimonial-card {
+    margin: 4rem 2rem;
+  }
+
+  .slick--view--testimonial-slider .slick-prev {
+    margin-left: 0rem;
+  }
+
+  .slick--view--testimonial-slider .slick-next {
+    margin-right: 0rem;
+  }
+
+  .field-item__field-landing-page-sections {
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+
+    &:first-child {
+      margin-top: 0 !important;
+    }
+
+    &:last-child {
+      margin-bottom: 0 !important;
+    }
+  }
+}

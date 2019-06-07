@@ -78,9 +78,11 @@ settings:
     language:
       language_list: un
     stylescombo:
-      styles: ''
+      styles: "h1.display-1|Display Heading 1\r\nh2.display-2|Display Heading 2\r\nh3.display-3|Display Heading 3\r\nh4.display-4|Display Heading 4\r\nspan.text-primary|Primary Text Color\r\ndiv.bg-primary|Primary BG Color\r\nspan.text-secondary|Secondary Text Color\r\ndiv.bg-secondary|Secondary BG Color\r\nspan.text-accent|Text BG Color\r\ndiv.bg-accent|Accent BG Color\r\nspan.text-dark|Dark Text Color\r\ndiv.bg-dark|Dark BG Color\r\nspan.text-light|Light Text Color\r\ndiv.bg-light|Light BG Color\r\ndiv.d-flex.flex-row|Flex Container Row\r\ndiv.d-flex.flex-column|Flex Container Column\r\ndiv.d-flex.flex-row-reverse|Flex Container Row Reverse\r\ndiv.d-flex.flex-column-reverse|Flex Container Column Reverse\r\nhr.my-5|Horizontal Rule Divider\r\ndiv.p-3|Small Container Padding\r\ndiv.p-5|Large Container Padding\r\ndiv.p-8|Huge Container Padding\r\ndiv.d-flex.align-center.justify-content-center|Flexbox Centered"
+    linkit:
+      linkit_profile: ''
 image_upload:
-  status: false
+  status: true
   scheme: public
   directory: inline-images
   max_size: ''

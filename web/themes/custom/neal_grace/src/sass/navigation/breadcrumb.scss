@@ -1,0 +1,10 @@
+// Navigation: Main Menu
+// -----------------------------------------------------------------------------
+.breadcrumb {
+      padding: 0;
+      background: transparent;
+      .breadcrumb-item.active, .breadcrumb-item::before {
+        color: #A29696;
+        opacity: 0.7;
+      }
+}

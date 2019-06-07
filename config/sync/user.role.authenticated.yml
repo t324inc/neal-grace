@@ -15,6 +15,7 @@ permissions:
   - 'access tour'
   - 'access user profiles'
   - 'bypass honeypot protection'
+  - 'opt-in or out of google analytics tracking'
   - 'search content'
   - 'use text format basic_html'
   - 'use text format ckeditor_limited'

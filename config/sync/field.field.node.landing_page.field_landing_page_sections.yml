@@ -5,9 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_landing_page_sections
     - node.type.landing_page
-    - paragraphs.paragraphs_type.bp_blank
-    - paragraphs.paragraphs_type.bp_modal
-    - paragraphs.paragraphs_type.bp_tab_section
   module:
     - entity_reference_revisions
 id: node.landing_page.field_landing_page_sections
@@ -24,10 +21,7 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     negate: 1
-    target_bundles:
-      bp_blank: bp_blank
-      bp_modal: bp_modal
-      bp_tab_section: bp_tab_section
+    target_bundles: {  }
     target_bundles_drag_drop:
       bp_accordion:
         weight: 17

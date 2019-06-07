@@ -11,7 +11,7 @@ dependencies:
     - field.field.paragraph.simple_block.field_text_content
     - paragraphs.paragraphs_type.simple_block
   module:
-    - link
+    - link_attributes
     - media_library
     - text
 id: paragraph.simple_block.default
@@ -24,15 +24,35 @@ content:
     settings:
       placeholder_url: ''
       placeholder_title: ''
+      enabled_attributes:
+        target: true
+        class: true
+        title: true
+        id: false
+        name: false
+        rel: false
+        accesskey: false
+        aria-label: false
     third_party_settings: {  }
-    type: link_default
+    type: link_attributes
     region: content
   field_heading:
     weight: 0
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
+    third_party_settings:
+      length_indicator:
+        indicator: true
+        indicator_opt:
+          optimin: 30
+          optimax: 60
+          tolerance: 15
+      maxlength:
+        maxlength_js: 100
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+      advanced_text_formatter:
+        show_token_tree: 0
     type: string_textfield
     region: content
   field_media:
@@ -43,7 +63,7 @@ content:
     type: media_library_widget
     region: content
   field_pre_heading:
-    weight: 2
+    weight: 1
     settings:
       size: 60
       placeholder: ''
@@ -51,7 +71,7 @@ content:
     type: string_textfield
     region: content
   field_sub_heading:
-    weight: 1
+    weight: 2
     settings:
       size: 60
       placeholder: ''

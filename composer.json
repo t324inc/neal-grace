@@ -40,7 +40,9 @@
         "t324inc/d324": "8.7.x-dev",
         "t324inc/d324-updater": "8.7.x-dev",
         "t324inc/d324_event":  "8.7.x-dev",
-        "t324inc/d324_testimonial": "8.7.x-dev"
+        "t324inc/d324_testimonial": "8.7.x-dev",
+        "drupal/entity_usage": "^2.0@alpha",
+        "drupal/menu_breadcrumb": "^1.9"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,

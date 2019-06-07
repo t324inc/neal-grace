@@ -11,8 +11,10 @@ dependencies:
     - node.type.blog_post
   module:
     - ds
+    - metatag
     - text
     - user
+    - yoast_seo
 third_party_settings:
   ds:
     layout:
@@ -21,40 +23,48 @@ third_party_settings:
       disable_css: false
       entity_classes: all_classes
       settings:
-        classes: {  }
         wrappers:
           ds_content: div
         outer_wrapper: div
         attributes: ''
         link_attribute: ''
         link_custom: ''
+        classes:
+          layout_class: {  }
     regions:
       ds_content:
-        - addtoany
         - field_meta_tags
         - field_yoast_seo
+        - addtoany
         - field_categories
+        - node_post_date
         - body
         - field_tags
+    fields:
+      node_post_date:
+        plugin_id: node_post_date
+        weight: 4
+        label: hidden
+        formatter: ds_post_date_reg_date
 id: node.blog_post.default
 targetEntityType: node
 bundle: blog_post
 mode: default
 content:
   addtoany:
-    weight: 0
-    region: content
+    weight: 2
+    region: ds_content
     settings: {  }
     third_party_settings: {  }
   body:
     label: hidden
     type: text_default
-    weight: 2
+    weight: 5
     settings: {  }
     third_party_settings: {  }
-    region: content
+    region: ds_content
   field_categories:
-    weight: 1
+    weight: 3
     label: hidden
     settings:
       link: false
@@ -68,16 +78,28 @@ content:
             lb-col: false
             classes: {  }
     type: entity_reference_label
-    region: content
+    region: ds_content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    weight: 0
+    region: ds_content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
   field_tags:
     type: entity_reference_label
-    weight: 3
-    region: content
+    weight: 6
+    region: ds_content
     label: hidden
     settings:
       link: true
     third_party_settings: {  }
+  field_yoast_seo:
+    type: yoastseo_formatter
+    weight: 1
+    region: ds_content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
 hidden:
-  field_meta_tags: true
-  field_yoast_seo: true
   links: true

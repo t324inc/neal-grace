@@ -1,0 +1,76 @@
+uuid: 9d1e740c-5055-4dca-ba7d-853ed69a6a1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_breakout_paragraphs
+    - paragraphs.paragraphs_type.breakout_container
+    - paragraphs.paragraphs_type.embedded_view
+    - paragraphs.paragraphs_type.embedded_webform
+    - paragraphs.paragraphs_type.feature_box
+    - paragraphs.paragraphs_type.from_library
+    - paragraphs.paragraphs_type.jumbotron
+    - paragraphs.paragraphs_type.separator
+    - paragraphs.paragraphs_type.simple_block
+  module:
+    - entity_reference_revisions
+id: paragraph.breakout_container.field_breakout_paragraphs
+field_name: field_breakout_paragraphs
+entity_type: paragraph
+bundle: breakout_container
+label: 'Embedded Paragraphs'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      embedded_view: embedded_view
+      embedded_webform: embedded_webform
+      feature_box: feature_box
+      from_library: from_library
+      jumbotron: jumbotron
+      separator: separator
+      simple_block: simple_block
+    target_bundles_drag_drop:
+      breakout_container:
+        weight: 13
+        enabled: false
+      embedded_view:
+        enabled: true
+        weight: 14
+      embedded_webform:
+        enabled: true
+        weight: 15
+      feature_box:
+        enabled: true
+        weight: 16
+      from_library:
+        enabled: true
+        weight: 17
+      image_slide:
+        weight: 18
+        enabled: false
+      jumbotron:
+        enabled: true
+        weight: 19
+      separator:
+        enabled: true
+        weight: 20
+      simple_block:
+        enabled: true
+        weight: 21
+      stripe_box:
+        weight: 22
+        enabled: false
+      stripe_columns:
+        weight: 23
+        enabled: false
+      stripe_view:
+        weight: 24
+        enabled: false
+field_type: entity_reference_revisions

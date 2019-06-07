@@ -9,7 +9,7 @@ dependencies:
 id: pagetitle_2
 theme: neal_grace
 region: titlearea
-weight: 0
+weight: -5
 provider: null
 plugin: page_title_block
 settings:

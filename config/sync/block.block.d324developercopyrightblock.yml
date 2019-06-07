@@ -17,6 +17,7 @@ settings:
   label: 'D324 Developer Copyright block'
   provider: d324_copyright_block
   label_display: ''
-  d324_copyright_block_developer_name: T324
   d324_copyright_block_developer_url: 'https://www.t324.com'
+  d324_copyright_block_developer_link_title: 'T324 - Website Development & Marketing'
+  d324_copyright_block_developer_name: T324
 visibility: {  }

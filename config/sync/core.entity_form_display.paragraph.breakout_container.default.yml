@@ -1,0 +1,110 @@
+uuid: 6ba330e5-06e6-415b-a679-7c375930634d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.breakout_container.field_background_color
+    - field.field.paragraph.breakout_container.field_background_color_2
+    - field.field.paragraph.breakout_container.field_breakout_paragraphs
+    - field.field.paragraph.breakout_container.field_media
+    - paragraphs.paragraphs_type.breakout_container
+  module:
+    - color_field
+    - field_group
+    - media_library
+    - paragraphs
+third_party_settings:
+  field_group:
+    group_breakout_container_tabs:
+      children:
+        - group_container_content
+        - group_background_settings
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: 'Breakout Container Tabs'
+      region: content
+    group_background_settings:
+      children:
+        - field_background_color
+        - field_background_color_2
+        - field_media
+      parent_name: group_breakout_container_tabs
+      weight: 21
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Background Settings'
+      region: content
+    group_container_content:
+      children: {  }
+      parent_name: group_breakout_container_tabs
+      weight: 20
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Container Content'
+      region: content
+id: paragraph.breakout_container.default
+targetEntityType: paragraph
+bundle: breakout_container
+mode: default
+content:
+  field_background_color:
+    weight: 5
+    settings:
+      show_input: ''
+      show_palette: ''
+      palette: ''
+      show_palette_only: ''
+      show_buttons: ''
+      allow_empty: ''
+    third_party_settings: {  }
+    type: color_field_widget_spectrum
+    region: content
+  field_background_color_2:
+    weight: 6
+    settings:
+      show_input: ''
+      show_palette: ''
+      palette: ''
+      show_palette_only: ''
+      show_buttons: ''
+      allow_empty: ''
+    third_party_settings: {  }
+    type: color_field_widget_spectrum
+    region: content
+  field_breakout_paragraphs:
+    type: entity_reference_paragraphs
+    weight: 22
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_media:
+    weight: 7
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    type: media_library_widget
+    region: content
+hidden:
+  created: true
+  status: true

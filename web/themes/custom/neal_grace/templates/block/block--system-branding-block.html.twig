@@ -1,0 +1,21 @@
+{#
+/**
+ * @file
+ * Template for the branding block.
+ */
+#}
+{% embed '@d324theme/block/block.twig' with {
+  html_tag: 'div',
+} %}
+
+{% block content %}
+  {% include '@neal_grace/navbar/navbar-brand.twig' with {
+    text: site_name,
+    image: site_logo,
+    width: '125',
+    height: '20',
+    path: path('<front>'),
+  } %}
+{% endblock %}
+
+{% endembed %}

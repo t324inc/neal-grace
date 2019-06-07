@@ -1,0 +1,8 @@
+uuid: 574489fa-776d-4b52-96f7-18778ac7cf7b
+langcode: en
+status: true
+dependencies: {  }
+id: reg_date
+label: 'Reg Date'
+locked: false
+pattern: 'M jS, Y'

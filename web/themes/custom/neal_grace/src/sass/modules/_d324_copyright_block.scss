@@ -1,4 +1,10 @@
 svg.d324-copyright-block__developer-logo {
   fill: $accent;
-  color: $white;
+  color: $accent;
+  height: 0.5rem;
+  margin: 0;
+}
+a.no-ext.d324-copyright-block__developer-link {
+  line-height: top;
+  display: inline-flex;
 }

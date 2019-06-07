@@ -12,26 +12,6 @@ dependencies:
     - blazy
     - ds
     - media
-third_party_settings:
-  ds:
-    layout:
-      id: ds_1col
-      library: null
-      disable_css: false
-      entity_classes: all_classes
-      settings:
-        wrappers:
-          ds_content: div
-        outer_wrapper: div
-        attributes: ''
-        link_attribute: ''
-        link_custom: ''
-        classes:
-          layout_class: {  }
-    regions:
-      ds_content:
-        - field_media_oembed_video
-        - field_media_cover_image
 _core:
   default_config_hash: n5LaD0CeOYbx2HXHTxJZ8Y700sWW-e6VPvCh250Q0og
 id: media.remote_video.default
@@ -42,7 +22,7 @@ content:
   field_media_cover_image:
     type: blazy
     weight: 1
-    region: ds_content
+    region: content
     label: hidden
     settings:
       responsive_image_style: de2e_standard
@@ -109,33 +89,12 @@ content:
     third_party_settings:
       ds:
         ft:
-          id: expert
+          id: default
           settings:
             lb: ''
-            prefix: ''
-            lbw-el: ''
-            lbw-cl: ''
-            lbw-at: ''
-            ow: true
-            ow-el: ''
-            ow-cl: 'd324-video-player embed-responsive embed-responsive-16by9'
-            ow-at: ''
-            ow-def-at: true
-            ow-def-cl: true
-            fis-el: ''
-            fis-cl: ''
-            fis-at: ''
-            fi-el: ''
-            fi-cl: ''
-            fi-at: ''
-            suffix: ''
-            lbw: false
             lb-col: false
-            fis: false
-            fis-def-at: false
-            fi: false
-            fi-def-at: false
-    region: ds_content
+            classes: {  }
+    region: content
 hidden:
   addtoany: true
   created: true

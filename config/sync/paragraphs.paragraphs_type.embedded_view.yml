@@ -1,9 +1,14 @@
 uuid: 902df9e7-e7c0-4114-bb0c-a30df7309081
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
 id: embedded_view
 label: 'Embedded View'
 icon_uuid: null
-description: ''
+description: 'Embed a view into the page'
 behavior_plugins: {  }

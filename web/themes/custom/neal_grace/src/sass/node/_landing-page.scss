@@ -43,3 +43,23 @@
     display: none;
   }
 }
+
+@include media-breakpoint-down(md) {
+  .path-frontpage {
+
+    .field-item__field-testimonial-quote {
+      font-size: 1rem;
+      line-height: 1.25;
+      font-weight: 600;
+    }
+
+    .paragraph--type--jumbotron {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
+}
