@@ -30,3 +30,7 @@ try {
 catch (InvalidPathException $e) {
     // Do nothing. Production environments rarely use .env files.
 }
+
+if(!empty(getenv('COMPOSER_MEMORY_LIMIT'))) {
+  ini_set('memory_limit', getenv('COMPOSER_MEMORY_LIMIT'));
+}
