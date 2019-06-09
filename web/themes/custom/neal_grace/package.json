@@ -24,5 +24,9 @@
     "sass": "^1.20.1",
     "sass-loader": "^7.1.0",
     "vue-template-compiler": "^2.6.10"
+  },
+  "dependencies": {
+    "@beyonk/google-fonts-webpack-plugin": "^1.2.3",
+    "webfontloader": "^1.6.28"
   }
 }

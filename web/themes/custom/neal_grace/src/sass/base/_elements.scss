@@ -93,6 +93,10 @@ article p a {
 
 .feature-box .feature-box-ctas {
   transform: translateY(45%);
+
+  a {
+    margin: 0 .5rem;
+  }
 }
 
 

@@ -53,8 +53,8 @@ mix
   .webpackConfig({
     plugins: [
       new ExtraWatchWebpackPlugin({
-        files: [ 'neal_grace.settings.yml' ],
-      }),
+        files: [ 'neal_grace.settings.yml' ]
+      })
     ],
   });
 

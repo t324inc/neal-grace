@@ -1,13 +1,14 @@
 bootstrap:
   version: 1.0
   css:
-    component:
+    layout:
       assets/css/neal_grace.bootstrap.css: {}
 
 style:
   version: 1.0
   css:
     theme:
+      assets/css/neal_grace.fonts.css: {}
       assets/css/neal_grace.style.css: {}
   js:
     assets/js/neal_grace.script.js: {}
