@@ -17,8 +17,7 @@
  */
 #}
 {% set css_classes = [
-  'feature-box',
-  'container'
+  'feature-box'
 ] %}
 {% set flex_direction = direction == 'left' ? 'flex-sm-row-reverse' : 'flex-sm-row' %}
 <div{{ attributes.addClass(css_classes) }}>
@@ -56,7 +55,7 @@
           {{ text }}
         </div>
         {% set button_direction = direction == 'left' ? 'text-align-right' : 'text-align-left' %}
-        <div class="feature-box-ctas {{ button_direction }} mb-4 mt-n5 mb-lg-n5 mt-lg-n3">
+        <div class="feature-box-ctas {{ button_direction }} mb-4 mb-lg-n5">
           {%- for item in calls_to_action -%}
             {% set link_attributes = create_attribute() %}
             {% set link_attributes = link_attributes.addClass('btn btn-primary') %}
