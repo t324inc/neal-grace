@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fb59bd3885cc6d3ab49868a6fcfd3129",
+    "content-hash": "dc1d49678ade0d78183571edb57ca6f5",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -139,27 +139,6 @@
                 "bower-asset/jquery": ">=1.3.2"
             },
             "type": "bower-asset"
-        },
-        {
-            "name": "bower-asset/fitvids",
-            "version": "v1.2.0",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:davatron5000/FitVids.js.git",
-                "reference": "d028a2287a633478005a49fe6d1f3fcbe9f2d955"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/davatron5000/FitVids.js/zipball/d028a2287a633478005a49fe6d1f3fcbe9f2d955",
-                "reference": "d028a2287a633478005a49fe6d1f3fcbe9f2d955"
-            },
-            "require": {
-                "bower-asset/jquery": ">=1.7.0"
-            },
-            "type": "bower-asset",
-            "license": [
-                "WTFPL"
-            ]
         },
         {
             "name": "bower-asset/jquery",
@@ -1695,16 +1674,16 @@
         },
         {
             "name": "doctrine/collections",
-            "version": "v1.6.1",
+            "version": "v1.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/collections.git",
-                "reference": "d2ae4ef05e25197343b6a39bae1d3c427a2f6956"
+                "reference": "c5e0bc17b1620e97c968ac409acbff28b8b850be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/collections/zipball/d2ae4ef05e25197343b6a39bae1d3c427a2f6956",
-                "reference": "d2ae4ef05e25197343b6a39bae1d3c427a2f6956",
+                "url": "https://api.github.com/repos/doctrine/collections/zipball/c5e0bc17b1620e97c968ac409acbff28b8b850be",
+                "reference": "c5e0bc17b1620e97c968ac409acbff28b8b850be",
                 "shasum": ""
             },
             "require": {
@@ -1761,7 +1740,7 @@
                 "iterators",
                 "php"
             ],
-            "time": "2019-03-25T19:03:48+00:00"
+            "time": "2019-06-09T13:48:14+00:00"
         },
         {
             "name": "doctrine/common",
@@ -1987,20 +1966,23 @@
         },
         {
             "name": "doctrine/lexer",
-            "version": "v1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/lexer.git",
-                "reference": "83893c552fd2045dd78aef794c31e694c37c0b8c"
+                "reference": "1febd6c3ef84253d7c815bed85fc622ad207a9f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/lexer/zipball/83893c552fd2045dd78aef794c31e694c37c0b8c",
-                "reference": "83893c552fd2045dd78aef794c31e694c37c0b8c",
+                "url": "https://api.github.com/repos/doctrine/lexer/zipball/1febd6c3ef84253d7c815bed85fc622ad207a9f8",
+                "reference": "1febd6c3ef84253d7c815bed85fc622ad207a9f8",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.5"
             },
             "type": "library",
             "extra": {
@@ -2009,8 +1991,8 @@
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Doctrine\\Common\\Lexer\\": "lib/"
+                "psr-4": {
+                    "Doctrine\\Common\\Lexer\\": "lib/Doctrine/Common/Lexer"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2031,13 +2013,16 @@
                     "email": "schmittjoh@gmail.com"
                 }
             ],
-            "description": "Base library for a lexer that can be used in Top-Down, Recursive Descent Parsers.",
-            "homepage": "http://www.doctrine-project.org",
+            "description": "PHP Doctrine Lexer parser library that can be used in Top-Down, Recursive Descent Parsers.",
+            "homepage": "https://www.doctrine-project.org/projects/lexer.html",
             "keywords": [
+                "annotations",
+                "docblock",
                 "lexer",
-                "parser"
+                "parser",
+                "php"
             ],
-            "time": "2014-09-09T13:34:57+00:00"
+            "time": "2019-06-08T11:03:04+00:00"
         },
         {
             "name": "doctrine/persistence",
@@ -5642,53 +5627,6 @@
             }
         },
         {
-            "name": "drupal/fitvids",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/fitvids.git",
-                "reference": "8.x-1.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/fitvids-8.x-1.0.zip",
-                "reference": "8.x-1.0",
-                "shasum": "5bf26285c279241f29c99e3b226b2dca4f84eac7"
-            },
-            "require": {
-                "drupal/core": "~8.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1467997439",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "DerekAhmedzai",
-                    "homepage": "https://www.drupal.org/user/167927"
-                }
-            ],
-            "description": "jQuery plugin for fluid width video embeds.",
-            "homepage": "https://www.drupal.org/project/fitvids",
-            "support": {
-                "source": "https://git.drupalcode.org/project/fitvids"
-            }
-        },
-        {
             "name": "drupal/focal_point",
             "version": "1.0.0",
             "source": {
@@ -7578,7 +7516,8 @@
                     }
                 },
                 "patches_applied": {
-                    "Issue #3013171 LogicException Form errors cannot be set after form validation has finished": "https://www.drupal.org/files/issues/2019-05-03/3013171-13.patch"
+                    "Issue #3013171 LogicException Form errors cannot be set after form validation has finished": "https://www.drupal.org/files/issues/2019-05-03/3013171-13.patch",
+                    "Issue #2907094 Make paragraphs module working with field_group version 3.x with support for the field_layout module": "https://www.drupal.org/files/issues/2019-06-06/2907094_39.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -7872,6 +7811,61 @@
             "support": {
                 "source": "https://git.drupal.org/project/recaptcha.git",
                 "issues": "https://www.drupal.org/project/issues/recaptcha"
+            }
+        },
+        {
+            "name": "drupal/redirect",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/redirect.git",
+                "reference": "8.x-1.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/redirect-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "3f9620d186e25f36ac56755979932b8ea965b8c7"
+            },
+            "require": {
+                "drupal/core": "~8"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.3",
+                    "datestamp": "1539682684",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                },
+                {
+                    "name": "pifagor",
+                    "homepage": "https://www.drupal.org/user/2375692"
+                }
+            ],
+            "description": "Allows users to redirect from old URLs to new URLs.",
+            "homepage": "https://www.drupal.org/project/redirect",
+            "support": {
+                "source": "https://git.drupalcode.org/project/redirect"
             }
         },
         {
@@ -13427,12 +13421,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/t324inc/d324_core.git",
-                "reference": "7b0a8f0b9cd24851d50fbed1c01a6d5180f9291b"
+                "reference": "2956184357638a7e890a42305ea6a6d8d2baffe5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/t324inc/d324_core/zipball/7b0a8f0b9cd24851d50fbed1c01a6d5180f9291b",
-                "reference": "7b0a8f0b9cd24851d50fbed1c01a6d5180f9291b",
+                "url": "https://api.github.com/repos/t324inc/d324_core/zipball/2956184357638a7e890a42305ea6a6d8d2baffe5",
+                "reference": "2956184357638a7e890a42305ea6a6d8d2baffe5",
                 "shasum": ""
             },
             "require": {
@@ -13472,6 +13466,7 @@
                 "drupal/entity": "~1.0",
                 "drupal/entity_clone": "~1.0",
                 "drupal/entity_reference_revisions": "~1.0",
+                "drupal/entity_usage": "^2.0@alpha",
                 "drupal/entityqueue": "~1.0",
                 "drupal/entityqueue_form_widget": "~1.0",
                 "drupal/extlink": "~1.0",
@@ -13505,6 +13500,7 @@
                 "drupal/pathauto": "^1.4",
                 "drupal/rabbit_hole": "~1.0",
                 "drupal/recaptcha": "~2.0",
+                "drupal/redirect": "^1.3",
                 "drupal/redis": "^1.1",
                 "drupal/responsive_preview": "~1.0",
                 "drupal/revision_log_default": "~1.0",
@@ -13584,7 +13580,8 @@
                         "Issue #3033271 Undefined index": "https://www.drupal.org/files/issues/2019-05-17/3033271-4.media_bulk_upload.Undefined-index-fileextensions-in-DrupalmediabulkuploadMediaTypeManagergetTargetFieldExtensions.patch"
                     },
                     "drupal/paragraphs": {
-                        "Issue #3013171 LogicException Form errors cannot be set after form validation has finished": "https://www.drupal.org/files/issues/2019-05-03/3013171-13.patch"
+                        "Issue #3013171 LogicException Form errors cannot be set after form validation has finished": "https://www.drupal.org/files/issues/2019-05-03/3013171-13.patch",
+                        "Issue #2907094 Make paragraphs module working with field_group version 3.x with support for the field_layout module": "https://www.drupal.org/files/issues/2019-06-06/2907094_39.patch"
                     },
                     "drupal/color_field": {
                         "Issue #3002836 No functionality of the Spectrum widget on Drupal 8.6.x with latest stable or dev": "https://www.drupal.org/files/issues/2018-11-07/no_functionality_of_almost_all_widgets-3002836-7.patch"
@@ -13607,10 +13604,10 @@
             "description": "This is the Core D324 feature. Provides core components required by other features.",
             "homepage": "https://www.drupal.org/project/d324_core",
             "support": {
-                "source": "https://github.com/t324inc/d324_core/tree/8.7.3",
+                "source": "https://github.com/t324inc/d324_core/tree/8.x-7.x",
                 "issues": "https://github.com/t324inc/d324_core/issues"
             },
-            "time": "2019-06-07T15:49:53+00:00"
+            "time": "2019-06-10T04:54:38+00:00"
         },
         {
             "name": "t324inc/d324_default_content",
@@ -13718,12 +13715,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/t324inc/d324_media.git",
-                "reference": "4f0730ad7c363c02a1c71ba6741714fa1a6ec498"
+                "reference": "c972a9771bfcce278dc8baf9dac70505366fa4f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/t324inc/d324_media/zipball/4f0730ad7c363c02a1c71ba6741714fa1a6ec498",
-                "reference": "4f0730ad7c363c02a1c71ba6741714fa1a6ec498",
+                "url": "https://api.github.com/repos/t324inc/d324_media/zipball/c972a9771bfcce278dc8baf9dac70505366fa4f2",
+                "reference": "c972a9771bfcce278dc8baf9dac70505366fa4f2",
                 "shasum": ""
             },
             "require": {
@@ -13828,10 +13825,10 @@
             "description": "Manages type of media contents and entity browsers in the site.",
             "homepage": "https://github.com/t324inc/d324_media",
             "support": {
-                "source": "https://github.com/t324inc/d324_media/tree/8.7.3",
+                "source": "https://github.com/t324inc/d324_media/tree/8.x-7.x",
                 "issues": "https://github.com/t324inc/d324_media/issues"
             },
-            "time": "2019-06-07T14:39:39+00:00"
+            "time": "2019-06-10T04:07:59+00:00"
         },
         {
             "name": "t324inc/d324_testimonial",
@@ -13889,12 +13886,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/t324inc/d324theme.git",
-                "reference": "4ca28b5bef5de52cf16cc9bbb07aa9e45afcf0a1"
+                "reference": "7c463385a706de6d3e397c0b1746cfbb8e125a4a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/t324inc/d324theme/zipball/4ca28b5bef5de52cf16cc9bbb07aa9e45afcf0a1",
-                "reference": "4ca28b5bef5de52cf16cc9bbb07aa9e45afcf0a1",
+                "url": "https://api.github.com/repos/t324inc/d324theme/zipball/7c463385a706de6d3e397c0b1746cfbb8e125a4a",
+                "reference": "7c463385a706de6d3e397c0b1746cfbb8e125a4a",
                 "shasum": ""
             },
             "require": {
@@ -13919,10 +13916,10 @@
             "description": "A base theme for D324 based on Radix. It has Bootstrap, Sass, BrowserSync and Font Awesome built-in.",
             "homepage": "https://github.com/t324inc/d324theme",
             "support": {
-                "source": "https://github.com/t324inc/d324theme/tree/8.7.3",
+                "source": "https://github.com/t324inc/d324theme/tree/8.x-7.x",
                 "issues": "https://github.com/t324inc/d324theme/issues"
             },
-            "time": "2019-06-07T15:05:31+00:00"
+            "time": "2019-06-10T04:08:53+00:00"
         },
         {
             "name": "t324inc/d324theme_admin",
