@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.paragraph.field_breakout_paragraphs
     - paragraphs.paragraphs_type.breakout_container
+    - paragraphs.paragraphs_type.content_columns
     - paragraphs.paragraphs_type.embedded_view
     - paragraphs.paragraphs_type.embedded_webform
     - paragraphs.paragraphs_type.feature_box
@@ -30,6 +31,7 @@ settings:
     negate: 0
     target_bundles:
       embedded_view: embedded_view
+      content_columns: content_columns
       embedded_webform: embedded_webform
       feature_box: feature_box
       from_library: from_library
@@ -43,6 +45,9 @@ settings:
       embedded_view:
         enabled: true
         weight: 14
+      content_columns:
+        enabled: true
+        weight: 15
       embedded_webform:
         enabled: true
         weight: 15

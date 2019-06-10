@@ -1,0 +1,9 @@
+uuid: 5e414e56-2863-4fd4-a9d2-c8cd81f92f51
+langcode: en
+status: true
+dependencies: {  }
+id: embedded_media
+label: 'Embedded Media'
+icon_uuid: null
+description: 'A media item to embed into the section'
+behavior_plugins: {  }

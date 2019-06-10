@@ -1,15 +1,15 @@
-uuid: e03c39af-4b9d-4fd8-8679-4de442267f94
+uuid: 8f50c3d2-90cc-4a6c-a93a-6f170649f2ef
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_background_image
     - media.type.image
-    - paragraphs.paragraphs_type.stripe_box
-id: paragraph.stripe_box.field_background_image
+    - paragraphs.paragraphs_type.breakout_container
+id: paragraph.breakout_container.field_background_image
 field_name: field_background_image
 entity_type: paragraph
-bundle: stripe_box
+bundle: breakout_container
 label: 'Background Image'
 description: ''
 required: false

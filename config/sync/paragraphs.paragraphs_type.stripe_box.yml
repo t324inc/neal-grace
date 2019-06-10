@@ -1,9 +1,0 @@
-uuid: 084d6278-4ca5-4030-a2a5-d55b3a7f46f6
-langcode: en
-status: true
-dependencies: {  }
-id: stripe_box
-label: 'Stripe Box'
-icon_uuid: null
-description: 'A paragraph for landing pages that has a background image and/or color, plus a media item, heading, and text'
-behavior_plugins: {  }

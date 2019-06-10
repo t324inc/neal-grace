@@ -1,0 +1,31 @@
+uuid: 98ab0e76-f16d-4569-81d5-e62171674195
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.embedded_media.field_media
+    - paragraphs.paragraphs_type.embedded_media
+  module:
+    - media_library
+id: paragraph.embedded_media.default
+targetEntityType: paragraph
+bundle: embedded_media
+mode: default
+content:
+  field_media:
+    weight: 0
+    settings:
+      media_types:
+        - image
+        - remote_video
+        - video
+        - file
+        - audio
+        - instagram
+        - tweet
+    third_party_settings: {  }
+    type: media_library_widget
+    region: content
+hidden:
+  created: true
+  status: true

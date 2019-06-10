@@ -1,21 +1,21 @@
-uuid: 3cc474ee-6a37-4ab8-b668-6968ab9e6e4d
+uuid: 0f27f23a-9a5c-45de-994d-28c33275533a
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_landing_page_sections
-    - node.type.landing_page
-    - paragraphs.paragraphs_type.image_slide
+    - field.storage.paragraph.field_columns
+    - paragraphs.paragraphs_type.breakout_container
+    - paragraphs.paragraphs_type.content_columns
   module:
     - entity_reference_revisions
-id: node.landing_page.field_landing_page_sections
-field_name: field_landing_page_sections
-entity_type: node
-bundle: landing_page
-label: 'Landing Page Sections'
+id: paragraph.content_columns.field_columns
+field_name: field_columns
+entity_type: paragraph
+bundle: content_columns
+label: Columns
 description: ''
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
@@ -23,48 +23,46 @@ settings:
   handler_settings:
     negate: 1
     target_bundles:
-      image_slide: image_slide
+      breakout_container: breakout_container
+      content_columns: content_columns
     target_bundles_drag_drop:
       breakout_container:
-        weight: 13
-        enabled: false
-      embedded_view:
+        enabled: true
         weight: 14
-        enabled: false
-      embedded_media:
-        weight: 15
-        enabled: false
       content_columns:
+        enabled: true
         weight: 15
-        enabled: false
-      embedded_webform:
-        weight: 15
-        enabled: false
-      feature_box:
+      embedded_view:
         weight: 16
         enabled: false
-      from_library:
+      embedded_webform:
         weight: 17
         enabled: false
-      image_slide:
-        enabled: true
+      feature_box:
         weight: 18
-      jumbotron:
+        enabled: false
+      from_library:
         weight: 19
         enabled: false
-      separator:
+      image_slide:
         weight: 20
         enabled: false
-      simple_block:
+      jumbotron:
         weight: 21
         enabled: false
-      stripe_box:
+      separator:
         weight: 22
         enabled: false
-      stripe_columns:
+      simple_block:
         weight: 23
         enabled: false
-      stripe_view:
+      stripe_box:
         weight: 24
+        enabled: false
+      stripe_columns:
+        weight: 25
+        enabled: false
+      stripe_view:
+        weight: 26
         enabled: false
 field_type: entity_reference_revisions

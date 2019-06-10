@@ -5,50 +5,37 @@ dependencies:
   config:
     - field.field.paragraph.breakout_container.field_background_color
     - field.field.paragraph.breakout_container.field_background_color_2
+    - field.field.paragraph.breakout_container.field_background_image
     - field.field.paragraph.breakout_container.field_breakout_paragraphs
-    - field.field.paragraph.breakout_container.field_media
+    - field.field.paragraph.breakout_container.field_fluid_container
     - paragraphs.paragraphs_type.breakout_container
   module:
-    - color_field
+    - ds
     - entity_reference_revisions
 id: paragraph.breakout_container.default
 targetEntityType: paragraph
 bundle: breakout_container
 mode: default
 content:
-  field_background_color:
-    weight: 1
-    label: above
-    settings:
-      format: hex
-      opacity: '1'
-    third_party_settings: {  }
-    type: color_field_formatter_text
-    region: content
-  field_background_color_2:
-    weight: 2
-    label: above
-    settings:
-      format: hex
-      opacity: '1'
-    third_party_settings: {  }
-    type: color_field_formatter_text
-    region: content
   field_breakout_paragraphs:
     type: entity_reference_revisions_entity_view
-    weight: 4
-    label: above
+    weight: 0
+    region: content
+    label: hidden
     settings:
       view_mode: default
       link: ''
-    third_party_settings: {  }
-    region: content
-  field_media:
-    weight: 3
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-hidden: {  }
+    third_party_settings:
+      ds:
+        ds_limit: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+hidden:
+  field_background_color: true
+  field_background_color_2: true
+  field_background_image: true
+  field_fluid_container: true

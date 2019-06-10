@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_page_sections
     - node.type.basic_page
+    - paragraphs.paragraphs_type.image_slide
   module:
     - entity_reference_revisions
 id: node.basic_page.field_page_sections
@@ -20,91 +21,50 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
-    target_bundles: null
+    negate: 1
+    target_bundles:
+      image_slide: image_slide
     target_bundles_drag_drop:
-      bp_accordion:
-        weight: 29
-        enabled: false
-      bp_accordion_section:
-        weight: 30
-        enabled: false
-      bp_blank:
-        weight: 31
-        enabled: false
-      bp_block:
-        weight: 32
-        enabled: false
-      bp_card:
-        weight: 33
-        enabled: false
-      bp_carousel:
-        weight: 34
-        enabled: false
-      bp_column_wrapper:
-        weight: 35
-        enabled: false
-      bp_columns:
-        weight: 36
-        enabled: false
-      bp_columns_three_uneven:
-        weight: 37
-        enabled: false
-      bp_columns_two_uneven:
-        weight: 38
-        enabled: false
-      bp_image:
-        weight: 39
-        enabled: false
-      bp_modal:
-        weight: 40
-        enabled: false
-      bp_quicklinks:
-        weight: 41
-        enabled: false
-      bp_simple:
-        weight: 42
-        enabled: false
-      bp_stat:
-        weight: 43
-        enabled: false
-      bp_statistics:
-        weight: 44
-        enabled: false
-      bp_tab_section:
-        weight: 45
-        enabled: false
-      bp_tabs:
-        weight: 46
-        enabled: false
-      bp_view:
-        weight: 47
-        enabled: false
-      bp_webform:
-        weight: 48
-        enabled: false
-      embedded_view:
-        weight: 49
-        enabled: false
-      feature_box:
-        weight: 50
-        enabled: false
-      image_slide:
-        weight: 51
+      simple_block:
+        weight: -25
         enabled: false
       jumbotron:
-        weight: 52
+        weight: -24
         enabled: false
-      simple_block:
-        weight: 53
+      feature_box:
+        weight: -23
+        enabled: false
+      separator:
+        weight: -22
+        enabled: false
+      embedded_webform:
+        weight: -21
+        enabled: false
+      embedded_view:
+        weight: -20
+        enabled: false
+      breakout_container:
+        weight: -19
         enabled: false
       stripe_box:
-        weight: 54
+        weight: -18
         enabled: false
       stripe_columns:
-        weight: 55
+        weight: -17
         enabled: false
       stripe_view:
-        weight: 56
+        weight: -16
+        enabled: false
+      from_library:
+        weight: -15
+        enabled: false
+      image_slide:
+        enabled: true
+        weight: -14
+      content_columns:
+        weight: 16
+        enabled: false
+      embedded_media:
+        weight: 17
         enabled: false
 field_type: entity_reference_revisions

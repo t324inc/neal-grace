@@ -1,9 +1,9 @@
-uuid: f03cf803-8f60-4ca3-8d1f-4efae0543ab9
+uuid: f02d879e-8727-4105-acfe-6a1d25a5a85b
 langcode: en
 status: true
 dependencies: {  }
-id: stripe_columns
-label: 'Stripe Columns'
+id: content_columns
+label: 'Content Columns'
 icon_uuid: null
 description: 'Equal width columns to be used in a landing page'
 behavior_plugins: {  }
